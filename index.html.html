@@ -223,10 +223,10 @@
                   <p class="text-[10px] text-brand-charcoal/70">Sold by Harith Fahmi</p>
                 </div>
 
-                <!-- Seaweed -->
+                <!-- Seaweed (DIUBAH: DIBUAT LEBAR PENUH & JELAS DENGAN OBJECT-COVER) -->
                 <div class="bg-white p-3 rounded-2xl shadow-sm border border-brand-creamDark text-center group hover:border-brand-green transition-all">
-                  <div class="relative overflow-hidden rounded-xl h-28 bg-brand-cream/60 flex items-center justify-center p-1">
-                    <img id="hero-seaweed-img" src="" alt="Tao Kae Noi Crispy Seaweed Original Flavour 32.5g pack - DapurUstak" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300">
+                  <div class="relative overflow-hidden rounded-xl h-28 bg-brand-cream/60 flex items-center justify-center">
+                    <img id="hero-seaweed-img" src="" alt="Tao Kae Noi Crispy Seaweed - DapurUstak" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
                     <span class="absolute top-1.5 left-1.5 text-[9px] bg-brand-green text-white font-bold px-1.5 py-0.5 rounded">Available</span>
                   </div>
                   <h3 class="font-heading font-bold text-sm text-brand-green mt-2">Seaweed</h3>
@@ -473,7 +473,7 @@
             <div class="w-14 h-14 rounded-2xl bg-brand-gold/30 text-brand-green flex items-center justify-center text-xl font-bold mx-auto mb-3">NF</div>
             <h3 class="font-heading font-bold text-lg text-brand-green">Nur Faizah</h3>
             <p class="text-xs font-bold text-brand-red uppercase tracking-wider mt-0.5">Seaweed Curator</p>
-            <p class="text-xs text-brand-charcoal/70 mt-2">Authentic Tao Kae Noi crispy roasted nori in Original &amp; Spicy.</p>
+            <p class="text-xs text-brand-charcoal/70 mt-2">Authentic Tao Kae Noi Big Sheet crispy nori in Original, Tomyam &amp; Spicy flavours.</p>
           </div>
         </div>
 
@@ -952,74 +952,14 @@
   </g>
 </svg>`);
 
-    /* Tao Kae Noi Crispy Seaweed Pouch SVG Data URI */
-    const SEAWEED_IMAGE = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 630" width="100%" height="100%">
-  <defs>
-    <linearGradient id="pouchBg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#E2E8F0"/>
-      <stop offset="5%" stop-color="#FFFFFF"/>
-      <stop offset="95%" stop-color="#FFFFFF"/>
-      <stop offset="100%" stop-color="#CBD5E1"/>
-    </linearGradient>
-    <linearGradient id="topGreen" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#4ADE80"/>
-      <stop offset="45%" stop-color="#22C55E"/>
-      <stop offset="100%" stop-color="#15803D"/>
-    </linearGradient>
-    <linearGradient id="taoYellow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#FEF08A"/>
-      <stop offset="35%" stop-color="#FACC15"/>
-      <stop offset="85%" stop-color="#EA580C"/>
-      <stop offset="100%" stop-color="#C2410C"/>
-    </linearGradient>
-    <linearGradient id="noriSheet" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#14532D"/>
-      <stop offset="30%" stop-color="#166534"/>
-      <stop offset="65%" stop-color="#15803D"/>
-      <stop offset="100%" stop-color="#052E16"/>
-    </linearGradient>
-    <filter id="pouchShadow" x="-10%" y="-5%" width="120%" height="115%">
-      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#1E293B" flood-opacity="0.18"/>
-    </filter>
-  </defs>
-
-  <g filter="url(#pouchShadow)">
-    <rect x="25" y="15" width="400" height="600" rx="14" fill="url(#pouchBg)" stroke="#CBD5E1" stroke-width="1.5"/>
-    <circle cx="225" cy="46" r="10" fill="#FFFFFF" stroke="#94A3B8" stroke-width="1.5"/>
-    <path d="M 25,37 Q 225,85 425,48 L 425,120 Q 225,155 25,110 Z" fill="url(#topGreen)"/>
-    <text x="225" y="80" fill="#FFFFFF" font-family="'Fredoka', cursive, sans-serif" font-size="20" font-weight="700" letter-spacing="3" text-anchor="middle">seaweed snack...</text>
-    
-    <!-- Mascot -->
-    <g transform="translate(130, 290)">
-      <path d="M -48,45 C -48,0 48,0 48,45 Z" fill="#DC2626" stroke="#1E293B" stroke-width="3"/>
-      <rect x="-10" y="8" width="20" height="37" fill="#FFFFFF" stroke="#1E293B" stroke-width="2.5"/>
-      <circle cx="0" cy="-15" r="42" fill="#FED7AA" stroke="#1E293B" stroke-width="3.5"/>
-      <circle cx="-24" cy="-8" r="7" fill="#F87171" opacity="0.7"/>
-      <circle cx="24" cy="-8" r="7" fill="#F87171" opacity="0.7"/>
-      <path d="M -14,-2 Q 0,16 14,-2" fill="none" stroke="#1E293B" stroke-width="3.5" stroke-linecap="round"/>
-      <path d="M -42,-28 C -42,-65 42,-65 42,-28 Z" fill="#DC2626" stroke="#1E293B" stroke-width="3.5"/>
-    </g>
-
-    <!-- Brand Typography -->
-    <g transform="translate(290, 215)">
-      <text x="0" y="0" fill="url(#taoYellow)" stroke="#1E293B" stroke-width="4.5" font-family="'Fredoka', cursive, sans-serif" font-size="52" font-weight="900" font-style="italic">Tao</text>
-      <text x="0" y="55" fill="url(#taoYellow)" stroke="#1E293B" stroke-width="4.5" font-family="'Fredoka', cursive, sans-serif" font-size="52" font-weight="900" font-style="italic">Kae</text>
-      <text x="0" y="110" fill="url(#taoYellow)" stroke="#1E293B" stroke-width="4.5" font-family="'Fredoka', cursive, sans-serif" font-size="52" font-weight="900" font-style="italic">Noi</text>
-    </g>
-
-    <!-- Nori Sheets -->
-    <g transform="translate(225, 460)">
-      <polygon points="-160,30 140,-20 170,40 -130,90" fill="url(#noriSheet)" stroke="#052E16" stroke-width="1.5"/>
-      <polygon points="-150,15 130,-35 160,25 -120,75" fill="url(#noriSheet)" stroke="#052E16" stroke-width="1.5"/>
-      <polygon points="-140,5 120,-45 150,15 -110,65" fill="url(#noriSheet)" stroke="#052E16" stroke-width="2"/>
-    </g>
-    <text x="350" y="580" fill="#1E293B" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Net Wt. 32.5g</text>
-  </g>
-</svg>`);
-
     window.DADIH_ADLI_IMAGE = DADIH_ADLI_IMAGE;
-    window.SEAWEED_IMAGE = SEAWEED_IMAGE;
+
+    // Fail gambar Seaweed (Format fail laptop .jpeg)
+    const SEAWEED_IMAGES_MAP = {
+      "Original": "originalseaweed.jpeg",
+      "Tomyam": "tomyamseaweed.jpeg",
+      "Spicy": "spicyseaweed.jpeg"
+    };
 
     window.STORE_CONFIG = {
       storeName: "DapurUstak",
@@ -1128,24 +1068,24 @@
           id: "seaweed",
           name: "Seaweed",
           seller: "Nur Faizah",
-          subtitle: "Tao Kae Noi crispy seaweed with Original and Spicy flavours.",
-          price: 5.00,
-          weight: "32.5g crispy pack",
+          subtitle: "Tao Kae Noi Big Sheet crispy seaweed in Original, Tomyam and Spicy flavours.",
+          price: 1.50,
+          weight: "3.2g crispy pack",
           isChilled: false,
           stockStatus: "Available",
           badgeColor: "bg-brand-green",
-          image: SEAWEED_IMAGE,
-          altText: "Tao Kae Noi Crispy Seaweed Original Flavour 32.5g pack - DapurUstak",
+          image: "originalseaweed.jpeg",
+          altText: "Tao Kae Noi Crispy Seaweed Original Flavour 3.2g pack - DapurUstak",
           isSampleImage: false,
           selectorLabel: "Flavour",
-          options: ["Original", "Spicy"],
+          options: ["Original", "Tomyam", "Spicy"],
           details: {
             ingredients: "Roasted nori seaweed, palm oil, salt, natural spices, pepper.",
             allergens: "Contains Sesame and Soy.",
             storage: "Store in a cool dry area away from humidity.",
             shelfLife: "6 months from packaging date.",
-            packaging: "Foil pouch with moisture absorber (Original packaging shown).",
-            variants: "Original, Spicy"
+            packaging: "Foil pouch with moisture absorber.",
+            variants: "Original, Tomyam, Spicy"
           }
         }
       ],
@@ -1193,16 +1133,16 @@
         },
         {
           id: "seaweed-twin-treat",
-          name: "Seaweed Twin Treat",
+          name: "Seaweed Trio Combo",
           seller: "Nur Faizah",
-          tagline: "Double nori goodness!",
-          description: "Includes 2 packs of Tao Kae Noi seaweed (Original & Spicy). Crispy, salty, and totally addictive.",
-          bundlePrice: 9.00,
-          regularPrice: 10.00,
-          image: SEAWEED_IMAGE,
-          altText: "Tao Kae Noi Crispy Seaweed Original Flavour packaging - DapurUstak",
-          items: "2x Tao Kae Noi Seaweed Packs (Original & Spicy)",
-          packagingNote: "Original packaging shown",
+          tagline: "Jimat RM 0.50! Dapat 3 perisa sekaligus",
+          description: "Includes 3 packs of Tao Kae Noi seaweed (Original, Tomyam & Spicy). Rangup, sedap dan jimat!",
+          bundlePrice: 4.00,
+          regularPrice: 4.50,
+          image: "trioseaweed.jpeg",
+          altText: "Tao Kae Noi Crispy Seaweed Trio Combo - DapurUstak",
+          items: "1x Original, 1x Tomyam, 1x Spicy",
+          packagingNote: "Jimat RM 0.50 berbanding beli asing",
           isChilled: false
         }
       ],
@@ -1314,7 +1254,7 @@
           rating: 5,
           date: "Just now",
           comment: "Crispy roasted nori sheets with just the right touch of savory saltiness. Great guilt-free snack to enjoy while working.",
-          photos: [SEAWEED_IMAGE]
+          photos: ["originalseaweed.jpeg"]
         },
         {
           id: "rev-w2",
@@ -1326,7 +1266,7 @@
           rating: 5,
           date: "2 weeks ago",
           comment: "The spicy kick is fantastic and very crunchy. Foil packaging keeps the seaweed super dry with moisture absorber included.",
-          photos: []
+          photos: ["spicyseaweed.jpeg"]
         }
       ]
     };
@@ -1348,8 +1288,6 @@
           cart.forEach(item => {
             if (item.id === 'dadih-adli' || item.id === 'dadih-sampler-draft') {
               item.image = DADIH_ADLI_IMAGE;
-            } else if (item.id === 'seaweed' || item.id === 'seaweed-twin-treat') {
-              item.image = SEAWEED_IMAGE;
             }
           });
         }
@@ -1421,7 +1359,6 @@
 
     function checkOperatingStatus() {
       const now = new Date();
-      // Target Malaysia Time (UTC+8)
       const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
       const myTime = new Date(utc + (3600000 * 8));
       
@@ -1452,6 +1389,7 @@
       }
     }
 
+    // Render Produk (Tinggi dinaikkan kepada h-60 supaya gambar keluar lebar dan tidak terhimpit)
     function renderProducts() {
       const container = document.getElementById('products-grid-container');
       if (!container) return;
@@ -1459,8 +1397,12 @@
       container.innerHTML = STORE_CONFIG.products.map(prod => `
         <div class="bg-white rounded-3xl p-5 shadow-warm border border-brand-creamDark flex flex-col justify-between group hover:border-brand-gold transition-all duration-300">
           <div>
-            <div class="relative overflow-hidden rounded-2xl h-52 bg-brand-cream/60 mb-4 flex items-center justify-center p-2">
-              <img id="prod-img-${prod.id}" src="${prod.image}" alt="${prod.altText || prod.name}" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/400x300/F7BF64/285839?text=${encodeURIComponent(prod.name)}'">
+            <div class="relative overflow-hidden rounded-2xl h-60 bg-brand-cream/60 mb-4 flex items-center justify-center p-2">
+              <img id="prod-img-${prod.id}" 
+                   src="${prod.image}" 
+                   alt="${prod.altText || prod.name}" 
+                   class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300" 
+                   onerror="if(this.src.endsWith('.jpeg')){ this.src = this.src.replace('.jpeg','.jpg'); } else { this.onerror=null; this.src='https://placehold.co/400x300/F7BF64/285839?text=${encodeURIComponent(prod.name)}'; }">
               <span class="absolute top-2.5 right-2.5 text-[11px] font-bold px-2.5 py-0.5 rounded-full ${prod.badgeColor} text-white shadow-sm">${prod.stockStatus}</span>
             </div>
             
@@ -1481,11 +1423,6 @@
               <select id="option-${prod.id}" onchange="window.handleProductOptionChange('${prod.id}', this.value)" class="w-full p-2.5 rounded-xl border border-brand-creamDark text-xs font-semibold bg-brand-creamLight focus:outline-none focus:ring-2 focus:ring-brand-green">
                 ${prod.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
               </select>
-              ${prod.id === 'seaweed' ? `
-                <div id="seaweed-card-packaging-note" class="hidden mt-1.5 text-center">
-                  <span class="text-[10px] text-brand-charcoal/70 bg-brand-cream px-2 py-0.5 rounded-full border border-brand-creamDark inline-block">Original packaging shown</span>
-                </div>
-              ` : ''}
             </div>
           </div>
 
@@ -1510,15 +1447,15 @@
       `).join('');
     }
 
+    // Tukar gambar automatik bila pilih perisa seaweed
     window.handleProductOptionChange = function(productId, selectedValue) {
       if (productId === 'seaweed') {
-        const noteEl = document.getElementById('seaweed-card-packaging-note');
-        if (noteEl) {
-          if (selectedValue === 'Spicy') {
-            noteEl.classList.remove('hidden');
-          } else {
-            noteEl.classList.add('hidden');
-          }
+        const imgEl = document.getElementById('prod-img-seaweed');
+        if (imgEl && SEAWEED_IMAGES_MAP[selectedValue]) {
+          imgEl.src = SEAWEED_IMAGES_MAP[selectedValue];
+          imgEl.onerror = function() {
+            this.src = SEAWEED_IMAGES_MAP[selectedValue].replace('.jpeg', '.jpg');
+          };
         }
       }
     };
@@ -1540,6 +1477,11 @@
       const qty = parseInt(qtyInput ? qtyInput.value : 1) || 1;
       const selectedOption = optSelect ? optSelect.value : prod.options[0];
 
+      let itemImg = prod.image;
+      if (prod.id === 'seaweed' && SEAWEED_IMAGES_MAP[selectedOption]) {
+        itemImg = SEAWEED_IMAGES_MAP[selectedOption];
+      }
+
       const itemKey = `${prod.id}__${selectedOption}`;
       const existing = cart.find(i => i.itemKey === itemKey);
 
@@ -1555,7 +1497,7 @@
           isBundle: false,
           option: selectedOption,
           qty: qty,
-          image: prod.image,
+          image: itemImg,
           isChilled: prod.isChilled
         });
       }
@@ -1577,6 +1519,7 @@
       renderBundles();
     };
 
+    // Render Bundles (Gambar dinaikkan ke h-56 dan guna object-cover supaya LEBAR dan JELAS)
     function renderBundles() {
       const container = document.getElementById('bundles-grid-container');
       if (!container) return;
@@ -1603,8 +1546,11 @@
             `}
 
             <div>
-              <div class="relative overflow-hidden rounded-2xl h-44 bg-brand-cream/60 mb-3 flex items-center justify-center p-2">
-                <img src="${b.image}" alt="${b.altText || b.name}" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/600x400/F7BF64/285839?text=Bundle'">
+              <div class="relative overflow-hidden rounded-2xl h-56 bg-brand-cream/60 mb-3 flex items-center justify-center">
+                <img src="${b.image}" 
+                     alt="${b.altText || b.name}" 
+                     class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" 
+                     onerror="if(this.src.endsWith('.jpeg')){ this.src = this.src.replace('.jpeg','.jpg'); } else { this.onerror=null; this.src='https://placehold.co/600x400/F7BF64/285839?text=Bundle'; }">
               </div>
 
               <span class="text-xs font-bold text-brand-red">Sold by ${b.seller}</span>
@@ -1880,7 +1826,6 @@
                   const itemTotalDisplay = itemHasPrice 
                     ? `RM ${(item.price * item.qty).toFixed(2)}` 
                     : `<span class="text-amber-800 text-[11px] font-semibold">Price on request</span>`;
-                  const isSeaweedSpicy = item.id === 'seaweed' && item.option === 'Spicy';
 
                   return `
                     <div class="flex items-center gap-3">
@@ -1893,7 +1838,7 @@
                           <button onclick="window.removeCartItem('${item.itemKey}')" class="text-gray-400 hover:text-brand-red text-xs px-1" title="Remove">✕</button>
                         </div>
                         <span class="text-[10px] text-gray-500 block truncate">
-                          ${item.option} ${isSeaweedSpicy ? '<span class="text-brand-charcoal/60 italic">(Original packaging shown)</span>' : ''}
+                          ${item.option}
                         </span>
                         <div class="flex items-center justify-between mt-1">
                           <span class="text-xs font-bold font-mono">${itemTotalDisplay}</span>
@@ -2041,7 +1986,15 @@
       if (!prod) return;
 
       const modalImg = document.getElementById('modal-product-img');
-      modalImg.src = prod.image;
+      const optSelect = document.getElementById(`option-${prod.id}`);
+      const selectedOption = optSelect ? optSelect.value : prod.options[0];
+
+      let imgSrc = prod.image;
+      if (prod.id === 'seaweed' && SEAWEED_IMAGES_MAP[selectedOption]) {
+        imgSrc = SEAWEED_IMAGES_MAP[selectedOption];
+      }
+
+      modalImg.src = imgSrc;
       modalImg.alt = prod.altText || prod.name;
       
       document.getElementById('modal-product-title').innerText = prod.name;
@@ -2053,22 +2006,12 @@
 
       const packagingCaptionContainer = document.getElementById('modal-packaging-caption-container');
       if (packagingCaptionContainer) {
-        if (prod.id === 'seaweed') {
-          const optSelect = document.getElementById(`option-${prod.id}`);
-          const isSpicy = optSelect && optSelect.value === 'Spicy';
-          packagingCaptionContainer.classList.toggle('hidden', !isSpicy);
-        } else {
-          packagingCaptionContainer.classList.add('hidden');
-        }
+        packagingCaptionContainer.classList.add('hidden');
       }
 
       const sampleBadge = document.getElementById('modal-product-sample-badge');
       if (sampleBadge) {
-        if (prod.isSampleImage === false) {
-          sampleBadge.classList.add('hidden');
-        } else {
-          sampleBadge.classList.remove('hidden');
-        }
+        sampleBadge.classList.add('hidden');
       }
 
       document.getElementById('modal-product-ingredients').innerText = prod.details.ingredients || "To be confirmed";
@@ -2117,7 +2060,6 @@
     });
 
     window.addEventListener('DOMContentLoaded', () => {
-      // Ensure nav and footer logo fallback to data URI if local asset is unavailable
       const navLogo = document.getElementById('nav-brand-logo');
       if (navLogo) {
         navLogo.addEventListener('error', () => {
@@ -2128,8 +2070,15 @@
       const heroDadih = document.getElementById('hero-dadih-img');
       if (heroDadih) heroDadih.src = DADIH_ADLI_IMAGE;
 
+      // Gambar Hero Seaweed disetkan kepada trioseaweed.jpeg
       const heroSeaweed = document.getElementById('hero-seaweed-img');
-      if (heroSeaweed) heroSeaweed.src = SEAWEED_IMAGE;
+      if (heroSeaweed) {
+        heroSeaweed.src = "trioseaweed.jpeg";
+        heroSeaweed.onerror = function() {
+          this.onerror = null;
+          this.src = "trioseaweed.jpg";
+        };
+      }
 
       loadSavedCart();
       renderProducts();
