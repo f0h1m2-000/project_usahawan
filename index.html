@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DapurUstak — Food &amp; Snacks | TVETMARA Besut, Terengganu</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter & Fredoka -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#F7BF64',
+              goldHover: '#EEAF4D',
+              green: '#285839',
+              greenDark: '#1C4028',
+              cream: '#FFF8E9',
+              creamLight: '#FFFDF9',
+              creamDark: '#F3E8D0',
+              red: '#BC2929',
+              redDark: '#991B1B',
+              charcoal: '#2D312E'
+            }
+          },
+          fontFamily: {
+            heading: ['Fredoka', 'sans-serif'],
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            warm: '0 4px 20px -2px rgba(40, 88, 57, 0.08), 0 2px 6px -1px rgba(247, 191, 100, 0.12)',
+            'warm-hover': '0 10px 25px -3px rgba(40, 88, 57, 0.14), 0 4px 10px -2px rgba(247, 191, 100, 0.25)',
+            float: '0 12px 30px -4px rgba(40, 88, 57, 0.22)'
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #FFF8E9;
+      color: #2D312E;
+      font-family: 'Inter', sans-serif;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    :focus-visible {
+      outline: 2px solid #285839;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-charcoal antialiased flex flex-col min-h-screen">
+
+  <div class="bg-brand-green text-brand-cream text-xs py-2 px-4 border-b border-brand-greenDark">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 justify-center">
+        <span class="inline-block w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+        <span class="font-medium">Based at TVETMARA Besut, Terengganu · Open daily, 8:00 AM–5:00 PM</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="operating-status-badge" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white/20 text-white">
+          Checking status...
+        </span>
+        <span class="text-brand-gold">|</span>
+        <a href="#operating-base" class="text-brand-gold hover:underline font-semibold text-[11px]">Find Our Base 📍</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-brand-cream/95 backdrop-blur-md border-b border-brand-creamDark shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3 group focus:outline-none" aria-label="DapurUstak Home">
+          <img id="nav-brand-logo"
+               src="logo dapurustak.jpeg"
+               alt="DapurUstak — Food &amp; Snacks Logo"
+               class="w-12 md:w-16 h-auto object-contain flex-shrink-0 transition-transform group-hover:scale-105"
+               onerror="window.handleLogoError && window.handleLogoError(this)">
+          <div class="flex flex-col">
+            <span class="font-heading font-bold text-2xl text-brand-green leading-none tracking-tight">DapurUstak</span>
+            <span class="text-[11px] font-bold text-brand-red uppercase tracking-widest mt-0.5">Food &amp; Snacks</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7" aria-label="Main Navigation">
+          <a href="#home" class="text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors">Home</a>
+          <a href="#products" class="text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors">Products</a>
+          <a href="#bundles" class="text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors">Bundles</a>
+          <a href="#services" class="text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors">Services</a>
+          <a href="#reviews" class="text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors">Reviews</a>
+          <a href="#contact" class="text-sm font-semibold text-brand-charcoal hover:text-brand-green transition-colors">Contact</a>
+          <a href="https://www.google.com/maps/place/TVETMARA+Besut/@5.7638124,102.5562622,751m/data=!3m1!1e3!4m10!1m2!2m1!1stvetmara+besut!3m6!1s0x31b6ee240330f8e9:0x355a236f457e62c0!8m2!3d5.7643176!4d102.5586187!15sCg50dmV0bWFyYSBiZXN1dJIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1v96j8nz?entry=ttu" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-brand-green hover:text-brand-greenDark flex items-center gap-1 transition-colors" title="Open TVETMARA Besut on Google Maps">
+            <span>TVETMARA Maps</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </nav>
+
+        <!-- Cart Trigger and Mobile Menu Button -->
+        <div class="flex items-center gap-3">
+          <button id="open-cart-btn" onclick="window.openCartDrawer()" class="relative p-2.5 rounded-2xl bg-white border border-brand-creamDark hover:border-brand-gold text-brand-green hover:bg-brand-cream transition-all shadow-sm flex items-center gap-2" aria-label="View Shopping Cart">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <span class="text-xs font-bold hidden sm:inline">Cart</span>
+            <span id="cart-counter-badge" class="w-5 h-5 rounded-full bg-brand-red text-white text-[11px] font-bold flex items-center justify-center -ml-1">0</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" onclick="window.toggleMobileMenu()" class="md:hidden p-2.5 rounded-2xl bg-white border border-brand-creamDark text-brand-charcoal hover:text-brand-green hover:bg-brand-cream" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden border-t border-brand-creamDark bg-brand-creamLight px-4 pt-3 pb-6 space-y-2">
+      <a href="#home" onclick="window.toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-charcoal hover:bg-brand-cream hover:text-brand-green">Home</a>
+      <a href="#products" onclick="window.toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-charcoal hover:bg-brand-cream hover:text-brand-green">Products</a>
+      <a href="#bundles" onclick="window.toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-charcoal hover:bg-brand-cream hover:text-brand-green">Bundles</a>
+      <a href="#services" onclick="window.toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-charcoal hover:bg-brand-cream hover:text-brand-green">Services</a>
+      <a href="#reviews" onclick="window.toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-charcoal hover:bg-brand-cream hover:text-brand-green">Reviews</a>
+      <a href="#contact" onclick="window.toggleMobileMenu()" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-charcoal hover:bg-brand-cream hover:text-brand-green">Contact</a>
+      <a href="https://www.google.com/maps/place/TVETMARA+Besut/@5.7638124,102.5562622,751m/data=!3m1!1e3!4m10!1m2!2m1!1stvetmara+besut!3m6!1s0x31b6ee240330f8e9:0x355a236f457e62c0!8m2!3d5.7643176!4d102.5586187!15sCg50dmV0bWFyYSBiZXN1dJIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1v96j8nz?entry=ttu" target="_blank" rel="noopener noreferrer" class="block py-2 px-3 rounded-xl text-sm font-semibold text-brand-green hover:bg-brand-cream flex items-center justify-between">
+        <span>TVETMARA Besut on Google Maps</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="home" class="flex-grow">
+    <section class="relative overflow-hidden pt-10 pb-16 lg:py-20 bg-gradient-to-b from-brand-cream to-brand-creamLight border-b border-brand-creamDark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Hero Text -->
+          <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-gold/30 border border-brand-gold/60 text-brand-greenDark font-bold text-xs">
+              <span>🌾 Authentic Local Snacks</span>
+              <span class="text-brand-red">•</span>
+              <span>TVETMARA Besut, Terengganu</span>
+            </div>
+            
+            <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl text-brand-green leading-[1.15]">
+              Your next favourite snack starts here.
+            </h1>
+            
+            <p class="text-base sm:text-lg text-brand-charcoal/80 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              Discover crunchy favourites, sweet treats and savoury bites from the DapurUstak team. Freshly packed and ready to enjoy.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+              <a href="#products" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-brand-green hover:bg-brand-greenDark text-white font-bold text-sm shadow-warm transition-transform active:scale-95 text-center">
+                Shop Products
+              </a>
+              <a href="#bundles" class="w-full sm:w-auto px-7 py-3.5 rounded-2xl bg-brand-gold hover:bg-brand-goldHover text-brand-greenDark font-bold text-sm shadow-warm transition-transform active:scale-95 text-center border border-brand-gold">
+                Explore Bundles
+              </a>
+            </div>
+
+            <!-- Hours & Campus Notice -->
+            <div class="pt-4 border-t border-brand-creamDark/80 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-xs text-brand-charcoal/70">
+              <div class="flex items-center gap-1.5">
+                <span class="text-brand-green font-bold">✓</span>
+                <span>FREE delivery inside TVET MARA Besut</span>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-brand-green font-bold">✓</span>
+                <span>Chilled &amp; ambient packing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Four-Product Grid Showcase -->
+          <div class="lg:col-span-6">
+            <div class="bg-brand-gold/20 p-5 sm:p-7 rounded-3xl border-2 border-brand-gold/40 shadow-warm">
+              <div class="grid grid-cols-2 gap-3.5">
+                <!-- Snek -->
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-brand-creamDark text-center group hover:border-brand-green transition-all">
+                  <div class="relative overflow-hidden rounded-xl h-28 bg-brand-cream">
+                    <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=400&q=80" alt="Snek sample - DapurUstak" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/F7BF64/285839?text=Snek'">
+                    <span class="absolute top-1.5 left-1.5 text-[9px] bg-brand-green text-white font-bold px-1.5 py-0.5 rounded">Available</span>
+                  </div>
+                  <h3 class="font-heading font-bold text-sm text-brand-green mt-2">Snek</h3>
+                  <p class="text-[10px] text-brand-charcoal/70">Sold by Hasif Hilman</p>
+                </div>
+
+                <!-- Dadih Adli -->
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-brand-creamDark text-center group hover:border-brand-green transition-all">
+                  <div class="relative overflow-hidden rounded-xl h-28 bg-brand-cream/60 flex items-center justify-center p-1">
+                    <img id="hero-dadih-img" src="" alt="Chilled Dadih Adli colourful pudding cups stacked against a cream background - DapurUstak" class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300">
+                    <span class="absolute top-1.5 left-1.5 text-[9px] bg-brand-green text-white font-bold px-1.5 py-0.5 rounded">Available</span>
+                  </div>
+                  <h3 class="font-heading font-bold text-sm text-brand-green mt-2">Dadih Adli</h3>
+                  <p class="text-[10px] text-brand-charcoal/70">Sold by Adli Safwan</p>
+                </div>
+
+                <!-- Kerepek (GUNA GAMBAR ASLI KEREPEK) -->
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-brand-creamDark text-center group hover:border-brand-green transition-all">
+                  <div class="relative overflow-hidden rounded-xl h-28 bg-brand-cream/60 flex items-center justify-center p-1">
+                    <img id="hero-kerepek-img" src="kerepek4.png" alt="Kerepek Pedas Crispy Chips - DapurUstak" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://placehold.co/400x300/F7BF64/285839?text=Kerepek'">
+                    <span class="absolute top-1.5 left-1.5 text-[9px] bg-brand-green text-white font-bold px-1.5 py-0.5 rounded">Available</span>
+                  </div>
+                  <h3 class="font-heading font-bold text-sm text-brand-green mt-2">Kerepek</h3>
+                  <p class="text-[10px] text-brand-charcoal/70">Sold by Harith Fahmi</p>
+                </div>
+
+                <!-- Seaweed -->
+                <div class="bg-white p-3 rounded-2xl shadow-sm border border-brand-creamDark text-center group hover:border-brand-green transition-all">
+                  <div class="relative overflow-hidden rounded-xl h-28 bg-brand-cream/60 flex items-center justify-center">
+                    <img id="hero-seaweed-img" src="" alt="Tao Kae Noi Crispy Seaweed - DapurUstak" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    <span class="absolute top-1.5 left-1.5 text-[9px] bg-brand-green text-white font-bold px-1.5 py-0.5 rounded">Available</span>
+                  </div>
+                  <h3 class="font-heading font-bold text-sm text-brand-green mt-2">Seaweed</h3>
+                  <p class="text-[10px] text-brand-charcoal/70">Sold by Nur Faizah</p>
+                </div>
+              </div>
+
+              <div class="mt-4 text-center">
+                <span class="text-xs font-semibold text-brand-green">All 4 signature items available for order in Besut</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-16 bg-white border-b border-brand-creamDark" aria-label="Product Catalogue">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-red bg-brand-red/10 px-3 py-1 rounded-full">DapurUstak Catalogue</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-green font-heading mt-2">Our Signature Snacks</h2>
+          <p class="text-brand-charcoal/70 text-sm mt-2">Crafted and sourced with care by each individual seller.</p>
+        </div>
+
+        <!-- 4-Column Product Grid -->
+        <div id="products-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Dynamically populated from STORE_CONFIG.products -->
+        </div>
+
+      </div>
+    </section>
+
+    <section id="bundles" class="py-16 bg-brand-cream border-b border-brand-creamDark" aria-label="Bundles Catalogue">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-green bg-brand-gold/30 px-3 py-1 rounded-full">Value Packs</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-green font-heading mt-2">Seller-Specific Bundles</h2>
+          <p class="text-brand-charcoal/70 text-sm mt-2">Curated bundle sets created by individual sellers with calculated bundle savings.</p>
+          
+          <!-- Seller Filter Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+            <button onclick="window.filterBundlesBySeller('all', this)" class="seller-tab-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-green text-white shadow-sm transition-colors">All Sellers</button>
+            <button onclick="window.filterBundlesBySeller('Hasif Hilman', this)" class="seller-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Hasif Hilman</button>
+            <button onclick="window.filterBundlesBySeller('Adli Safwan', this)" class="seller-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Adli Safwan</button>
+            <button onclick="window.filterBundlesBySeller('Harith Fahmi', this)" class="seller-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Harith Fahmi</button>
+            <button onclick="window.filterBundlesBySeller('Nur Faizah', this)" class="seller-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Nur Faizah</button>
+          </div>
+        </div>
+
+        <!-- Bundles Grid -->
+        <div id="bundles-grid-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Dynamically populated from STORE_CONFIG.bundles -->
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="py-16 bg-white border-b border-brand-creamDark" aria-label="Store Services">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-red bg-brand-red/10 px-3 py-1 rounded-full">Tailored Orders</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-green font-heading mt-2">Our Services</h2>
+          <p class="text-brand-charcoal/70 text-sm mt-2">From casual snack cravings to bulk party packs and TVET campus events.</p>
+        </div>
+
+        <div id="services-grid-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Populated from STORE_CONFIG.services -->
+        </div>
+
+      </div>
+    </section>
+
+    <section id="reviews" class="py-16 bg-brand-cream border-b border-brand-creamDark" aria-label="Customer Reviews">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-gold/30 border border-brand-gold/60 text-brand-greenDark font-bold text-xs uppercase tracking-wider mb-2">
+            <span>✨ Marketplace Feedback</span>
+            <span class="text-brand-red">•</span>
+            <span>Customer Showcase</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-green font-heading">
+            Customer Reviews
+          </h2>
+          <p class="text-brand-charcoal/80 text-sm mt-1.5 font-medium">
+            These are verified reviews created for our products.
+          </p>
+
+          <!-- Calculated Sample Ratings Summary Bar -->
+          <div id="sample-ratings-summary" class="mt-6 p-4 rounded-2xl bg-white border border-brand-creamDark shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Injected via JavaScript from sample review dataset -->
+          </div>
+        </div>
+
+        <!-- Product Filter Tabs -->
+        <div class="flex items-center justify-center flex-wrap gap-2 mb-8">
+          <button onclick="window.filterReviewsByProduct('all', this)" class="review-tab-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-green text-white shadow-sm transition-colors">All Products</button>
+          <button onclick="window.filterReviewsByProduct('Kerepek', this)" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Kerepek</button>
+          <button onclick="window.filterReviewsByProduct('Dadih Adli', this)" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Dadih Adli</button>
+          <button onclick="window.filterReviewsByProduct('Snek', this)" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Snek</button>
+          <button onclick="window.filterReviewsByProduct('Seaweed', this)" class="review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors">Seaweed</button>
+        </div>
+
+        <!-- Marketplace Review Grid (Scrollable on mobile) -->
+        <div id="reviews-grid-container" class="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-x-auto pb-4 pt-1 px-1 hide-scrollbar snap-x">
+          <!-- Populated from STORE_CONFIG.sampleReviews -->
+        </div>
+
+      </div>
+    </section>
+
+    <section id="operating-base" class="py-16 bg-white border-b border-brand-creamDark" aria-label="Operating Base and Delivery">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Location Details & Hours -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-green bg-brand-gold/30 px-3 py-1 rounded-full">Our Base</span>
+              <h2 class="text-3xl font-extrabold text-brand-green font-heading mt-2">Find Our Operating Base</h2>
+              <p class="text-brand-charcoal/70 text-sm mt-1">Orders are packed and dispatched directly from TVETMARA Besut.</p>
+            </div>
+
+            <div class="bg-brand-cream p-6 rounded-3xl border border-brand-creamDark space-y-4">
+              <div class="flex items-start gap-3">
+                <span class="text-2xl">📍</span>
+                <div>
+                  <h3 class="font-bold text-sm text-brand-charcoal">Official Operating Campus:</h3>
+                  <a href="https://www.google.com/maps/place/TVETMARA+Besut/@5.7638124,102.5562622,751m/data=!3m1!1e3!4m10!1m2!2m1!1stvetmara+besut!3m6!1s0x31b6ee240330f8e9:0x355a236f457e62c0!8m2!3d5.7643176!4d102.5586187!15sCg50dmV0bWFyYSBiZXN1dJIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1v96j8nz?entry=ttu" target="_blank" rel="noopener noreferrer" id="full-address-text" class="text-sm font-semibold text-brand-green hover:underline mt-0.5 leading-relaxed block">
+                    TVETMARA Besut, Jalan Alor Lintang, 22200 Besut, Terengganu
+                  </a>
+                  <p class="text-xs text-brand-charcoal/60 mt-1">Customer self-pickup is arranged directly via our WhatsApp contact or on-campus meetup.</p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-2.5 pt-2">
+                <a href="https://www.google.com/maps/place/TVETMARA+Besut/@5.7638124,102.5562622,751m/data=!3m1!1e3!4m10!1m2!2m1!1stvetmara+besut!3m6!1s0x31b6ee240330f8e9:0x355a236f457e62c0!8m2!3d5.7643176!4d102.5586187!15sCg50dmV0bWFyYSBiZXN1dJIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1v96j8nz?entry=ttu" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-brand-green hover:bg-brand-greenDark text-white text-xs font-bold flex items-center gap-1.5 shadow-sm transition-transform active:scale-95">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  <span>Open TVETMARA Besut in Maps</span>
+                </a>
+                <button type="button" onclick="window.copyAddressToClipboard()" class="px-4 py-2 rounded-xl bg-white hover:bg-brand-creamDark border border-brand-creamDark text-brand-charcoal text-xs font-bold flex items-center gap-1.5 transition-colors">
+                  <span id="copy-address-label">📋 Copy Campus Address</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Operating Hours Card -->
+            <div class="bg-brand-creamLight p-5 rounded-2xl border border-brand-creamDark">
+              <h3 class="font-heading font-bold text-base text-brand-green flex items-center gap-2 mb-2">
+                <span>🕒 Weekly Operating Schedule</span>
+                <span id="operating-status-pill" class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-green text-white">Open</span>
+              </h3>
+              <div class="grid grid-cols-2 gap-2 text-xs">
+                <div>
+                  <span class="block text-brand-charcoal/60 font-semibold">Operating Days:</span>
+                  <span class="font-bold text-brand-charcoal">Monday – Sunday (Daily)</span>
+                </div>
+                <div>
+                  <span class="block text-brand-charcoal/60 font-semibold">Hours (Malaysia Time UTC+8):</span>
+                  <span class="font-bold text-brand-charcoal">8:00 AM – 5:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Delivery Rates & Fulfilment Rules -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider text-brand-red bg-brand-red/10 px-3 py-1 rounded-full">Fulfilment</span>
+              <h2 class="text-3xl font-extrabold text-brand-green font-heading mt-2">Delivery &amp; Pickup Rates</h2>
+              <p class="text-brand-charcoal/70 text-sm mt-1">Transparent campus and outside delivery rates calculated during checkout.</p>
+            </div>
+
+            <div class="space-y-3">
+              <div class="p-4 rounded-2xl bg-brand-gold/20 border-2 border-brand-gold/60 flex items-start gap-3">
+                <span class="text-2xl">🎓</span>
+                <div>
+                  <h3 class="font-bold text-sm text-brand-green font-heading">FREE delivery within TVET MARA Besut</h3>
+                  <p class="text-xs text-brand-charcoal/80 mt-0.5">Complimentary door-to-door delivery inside TVET MARA Besut campus (RM 0.00 fee).</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-white border border-brand-creamDark shadow-sm flex items-start gap-3">
+                <span class="text-2xl">🚗</span>
+                <div>
+                  <h3 class="font-bold text-sm text-brand-charcoal font-heading">Outside TVET MARA Besut: RM 1.00 per kilometre</h3>
+                  <p class="text-xs text-brand-charcoal/70 mt-0.5">Calculated based on distance from TVET MARA Besut. Formula: <code>Distance (km) × RM 1.00</code>. Applied once per combined order.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-white border border-brand-creamDark shadow-sm flex items-start gap-3">
+                <span class="text-2xl">❄️</span>
+                <div>
+                  <h3 class="font-bold text-sm text-brand-charcoal font-heading">Dadih Adli Chilled Care Notice</h3>
+                  <p class="text-xs text-brand-charcoal/70 mt-0.5">Freshly set dadih requires chilled care. Orders containing Dadih Adli are dispatched promptly or prepared cold for scheduled pickup.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-brand-cream" aria-label="Contact and Team">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-brand-green bg-brand-gold/30 px-3 py-1 rounded-full">Connect With Us</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-green font-heading mt-2">Meet The Team &amp; Contact</h2>
+          <p class="text-brand-charcoal/70 text-sm mt-2">DapurUstak brings together four passionate food enthusiasts.</p>
+        </div>
+
+        <!-- 4 Team Members Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div class="bg-white p-5 rounded-3xl border border-brand-creamDark text-center shadow-sm">
+            <div class="w-14 h-14 rounded-2xl bg-brand-gold/30 text-brand-green flex items-center justify-center text-xl font-bold mx-auto mb-3">HH</div>
+            <h3 class="font-heading font-bold text-lg text-brand-green">Hasif Hilman</h3>
+            <p class="text-xs font-bold text-brand-red uppercase tracking-wider mt-0.5">Snek Specialist</p>
+            <p class="text-xs text-brand-charcoal/70 mt-2">Childhood snack favourites: Super Ring, Bika, Twisties and more.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-3xl border border-brand-creamDark text-center shadow-sm">
+            <div class="w-14 h-14 rounded-2xl bg-brand-gold/30 text-brand-green flex items-center justify-center text-xl font-bold mx-auto mb-3">AS</div>
+            <h3 class="font-heading font-bold text-lg text-brand-green">Adli Safwan</h3>
+            <p class="text-xs font-bold text-brand-red uppercase tracking-wider mt-0.5">Dadih Master</p>
+            <p class="text-xs text-brand-charcoal/70 mt-2">Fresh silky dadih pudding cups: Strawberry, Mango, Chocolate &amp; Sweet Corn.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-3xl border border-brand-creamDark text-center shadow-sm">
+            <div class="w-14 h-14 rounded-2xl bg-brand-gold/30 text-brand-green flex items-center justify-center text-xl font-bold mx-auto mb-3">HF</div>
+            <h3 class="font-heading font-bold text-lg text-brand-green">Harith Fahmi</h3>
+            <p class="text-xs font-bold text-brand-red uppercase tracking-wider mt-0.5">Kerepek Expert</p>
+            <p class="text-xs text-brand-charcoal/70 mt-2">Crispy savoury kerepek in Original, BBQ, Cheese and Spicy flavours.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-3xl border border-brand-creamDark text-center shadow-sm">
+            <div class="w-14 h-14 rounded-2xl bg-brand-gold/30 text-brand-green flex items-center justify-center text-xl font-bold mx-auto mb-3">NF</div>
+            <h3 class="font-heading font-bold text-lg text-brand-green">Nur Faizah</h3>
+            <p class="text-xs font-bold text-brand-red uppercase tracking-wider mt-0.5">Seaweed Curator</p>
+            <p class="text-xs text-brand-charcoal/70 mt-2">Authentic Tao Kae Noi Big Sheet crispy nori in Original, Tomyam &amp; Spicy flavours.</p>
+          </div>
+        </div>
+
+        <!-- Store Communication & Socials Card -->
+        <div class="max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-3xl border-2 border-brand-gold shadow-warm text-center space-y-6">
+          <div class="space-y-2">
+            <h3 class="font-heading font-bold text-2xl text-brand-green">Shared Store WhatsApp Contact</h3>
+            <p class="text-xs text-brand-charcoal/80 max-w-md mx-auto">
+              We manage all customer enquiries, quotations and order confirmations through one shared WhatsApp channel.
+            </p>
+          </div>
+
+          <!-- Clickable WhatsApp Box -->
+          <div class="p-4 rounded-2xl bg-brand-cream/80 border border-brand-creamDark inline-flex flex-col sm:flex-row items-center gap-4">
+            <div class="text-left">
+              <span class="block text-[10px] uppercase font-bold text-brand-charcoal/60 tracking-wider">Official WhatsApp</span>
+              <a href="https://wa.me/60123456789?text=Hi%20Dapur%20Ustak!%20I%20would%20like%20to%20ask%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="font-heading font-bold text-2xl text-brand-green hover:underline">
+                0123456789
+              </a>
+            </div>
+            <a href="https://wa.me/60123456789?text=Hi%20Dapur%20Ustak!%20I%20would%20like%20to%20ask%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="py-2.5 px-5 rounded-xl bg-brand-green hover:bg-brand-greenDark text-white text-xs font-bold flex items-center gap-2 shadow-sm transition-transform active:scale-95">
+              <span>💬 Chat on WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="pt-4 border-t border-brand-creamDark flex flex-wrap items-center justify-center gap-4">
+            <a href="https://www.facebook.com/profile.php?id=61591933227920" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-[#1877F2]/10 hover:bg-[#1877F2]/20 text-[#1877F2] font-bold text-xs flex items-center gap-2 transition-colors">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Facebook: Dapur Ustak</span>
+            </a>
+            <a href="https://www.instagram.com/dapurustak/" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-[#E4405F]/10 hover:bg-[#E4405F]/20 text-[#E4405F] font-bold text-xs flex items-center gap-2 transition-colors">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram: @dapurustak</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-green text-brand-cream border-t border-brand-greenDark py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Brand Summary -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <img src="logo dapurustak.jpeg"
+                 alt="DapurUstak — Food &amp; Snacks Logo"
+                 class="w-12 md:w-14 h-auto object-contain flex-shrink-0"
+                 onerror="window.handleLogoError && window.handleLogoError(this)">
+            <div>
+              <span class="font-heading font-bold text-xl text-white block leading-none">DapurUstak</span>
+              <span class="text-[10px] font-bold text-brand-gold uppercase tracking-widest">Food &amp; Snacks</span>
+            </div>
+          </div>
+          <p class="text-xs text-brand-cream/70 leading-relaxed">
+            Your friendly local snacks and treats storefront based in TVETMARA Besut, Terengganu. Freshly prepared, carefully packaged.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-2">
+          <h4 class="font-heading font-bold text-sm text-brand-gold">Quick Navigation</h4>
+          <ul class="text-xs space-y-1.5 text-brand-cream/80">
+            <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors">Products Catalogue</a></li>
+            <li><a href="#bundles" class="hover:text-white transition-colors">Seller Bundles</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Bulk &amp; Event Orders</a></li>
+            <li><a href="#reviews" class="hover:text-white transition-colors">Customer Reviews</a></li>
+            <li><a href="https://www.google.com/maps/place/TVETMARA+Besut/@5.7638124,102.5562622,751m/data=!3m1!1e3!4m10!1m2!2m1!1stvetmara+besut!3m6!1s0x31b6ee240330f8e9:0x355a236f457e62c0!8m2!3d5.7643176!4d102.5586187!15sCg50dmV0bWFyYSBiZXN1dJIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1v96j8nz?entry=ttu" target="_blank" rel="noopener noreferrer" class="hover:text-brand-gold">TVETMARA Besut Location ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Operating Base & Schedule -->
+        <div class="space-y-2">
+          <h4 class="font-heading font-bold text-sm text-brand-gold">Operating Schedule &amp; Base</h4>
+          <p class="text-xs text-brand-cream/80">
+            <strong>Operating Days:</strong> Daily, Monday – Sunday<br>
+            <strong>Hours:</strong> 8:00 AM – 5:00 PM (UTC+8)<br>
+            <strong>Location:</strong> TVETMARA Besut, Jalan Alor Lintang, 22200 Besut, Terengganu
+          </p>
+          <p class="text-xs text-brand-gold font-bold pt-1">
+            WhatsApp Contact: 0123456789
+          </p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-white/10 text-center text-[11px] text-brand-cream/60">
+        &copy; 2026 DapurUstak — Food &amp; Snacks. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <aside aria-label="WhatsApp quick contact">
+    <a href="https://wa.me/60123456789?text=Hi%20Dapur%20Ustak!%20I%20would%20like%20to%20ask%20about%20your%20products." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 p-3.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white shadow-float flex items-center gap-2 group transition-transform active:scale-95" aria-label="Open WhatsApp Chat">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <span class="text-xs font-bold hidden sm:inline">Order via WhatsApp</span>
+    </a>
+  </aside>
+
+  <div id="cart-drawer-overlay" onclick="window.closeCartDrawer()" class="hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-xs transition-opacity duration-300"></div>
+  
+  <div id="cart-drawer" class="fixed top-0 right-0 bottom-0 z-50 w-full sm:w-[420px] bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300">
+    <!-- Cart Header -->
+    <div class="p-5 border-b border-brand-creamDark flex items-center justify-between bg-brand-cream">
+      <div class="flex items-center gap-2">
+        <svg class="w-5 h-5 text-brand-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+        <h3 class="font-heading font-bold text-xl text-brand-green">Your Cart</h3>
+      </div>
+      <button onclick="window.closeCartDrawer()" class="p-2 rounded-xl text-brand-charcoal hover:bg-white text-lg font-bold" aria-label="Close cart drawer">✕</button>
+    </div>
+
+    <!-- Cart Body -->
+    <div id="cart-items-container" class="flex-grow overflow-y-auto p-5 space-y-4">
+      <!-- Populated via JavaScript -->
+    </div>
+
+    <!-- Fulfilment & Checkout Options Footer -->
+    <div id="cart-footer-container" class="p-5 border-t border-brand-creamDark bg-brand-creamLight space-y-3.5">
+      <!-- Fulfilment Selector -->
+      <div>
+        <label class="block text-[11px] font-bold uppercase text-brand-charcoal/70 tracking-wider mb-1">Fulfilment Method</label>
+        <select id="cart-fulfilment-select" onchange="window.handleFulfilmentChange(this.value)" class="w-full p-2.5 rounded-xl border border-brand-creamDark text-xs font-semibold bg-white focus:ring-2 focus:ring-brand-green">
+          <option value="inside-tvet">Inside TVET MARA Besut (FREE)</option>
+          <option value="outside-tvet">Outside TVET MARA Besut (RM 1.00/km)</option>
+          <option value="pickup">Self-Pickup at TVETMARA Besut (FREE)</option>
+        </select>
+      </div>
+
+      <!-- Outside Delivery Distance Input -->
+      <div id="outside-delivery-distance-box" class="hidden p-3 rounded-xl bg-white border border-brand-creamDark space-y-1.5">
+        <div class="flex items-center justify-between">
+          <label for="delivery-km-input" class="text-[11px] font-bold text-brand-charcoal">Distance from TVET MARA Besut (km):</label>
+          <input type="number" id="delivery-km-input" value="1.0" min="0.1" step="0.5" oninput="window.handleDistanceChange(this.value)" class="w-20 p-1.5 text-right font-bold text-xs border rounded-lg">
+        </div>
+        <span class="block text-[10px] text-brand-charcoal/60">Estimated rate: RM 1.00/km. Seller will verify actual distance.</span>
+      </div>
+
+      <!-- Payment Method Selector -->
+      <div>
+        <label class="block text-[11px] font-bold uppercase text-brand-charcoal/70 tracking-wider mb-1">Payment Method</label>
+        <select id="cart-payment-select" onchange="window.handlePaymentMethodChange(this.value)" class="w-full p-2.5 rounded-xl border border-brand-creamDark text-xs font-semibold bg-white focus:ring-2 focus:ring-brand-green">
+          <option value="Touch ’n Go eWallet">Touch ’n Go eWallet</option>
+          <option value="QR Payment">QR Payment (Request from seller)</option>
+          <option value="Cash">Cash (Upon delivery/pickup)</option>
+        </select>
+      </div>
+
+      <!-- Order Subtotals Breakdown -->
+      <div class="pt-2 border-t border-brand-creamDark/80 space-y-1 text-xs">
+        <div class="flex justify-between text-brand-charcoal/70">
+          <span>Items Subtotal:</span>
+          <span id="cart-subtotal-val" class="font-bold">RM 0.00</span>
+        </div>
+        <div class="flex justify-between text-brand-charcoal/70">
+          <span>Delivery Charge:</span>
+          <span id="cart-delivery-val" class="font-bold">RM 0.00</span>
+        </div>
+        <div class="flex justify-between text-base font-extrabold text-brand-green pt-1 border-t border-brand-creamDark">
+          <span>Estimated Total:</span>
+          <span id="cart-total-val">RM 0.00</span>
+        </div>
+      </div>
+
+      <button id="checkout-btn" onclick="window.proceedToWhatsAppCheckout()" class="w-full py-3.5 px-4 rounded-2xl bg-brand-green hover:bg-brand-greenDark text-white font-bold text-sm shadow-warm transition-transform active:scale-95 flex items-center justify-center gap-2">
+        <span>Continue to WhatsApp</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+      </button>
+    </div>
+  </div>
+
+  <div id="product-details-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black/60 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border-2 border-brand-gold relative" role="dialog" aria-modal="true" aria-labelledby="modal-product-title">
+      <button onclick="window.closeProductDetailsModal()" class="absolute top-4 right-4 p-2 rounded-full text-gray-400 hover:text-brand-charcoal hover:bg-brand-cream transition-colors" aria-label="Close Product Details">✕</button>
+
+      <div class="flex flex-col sm:flex-row gap-6">
+        <div class="sm:w-1/2">
+          <div class="w-full h-56 sm:h-64 bg-brand-cream/60 rounded-2xl border border-brand-creamDark flex items-center justify-center p-2 overflow-hidden">
+            <img id="modal-product-img" src="" alt="Product Detail" class="w-full h-full object-contain object-center">
+          </div>
+          <div id="modal-packaging-caption-container" class="text-center mt-1.5 hidden">
+            <span id="modal-packaging-caption" class="text-[10px] text-brand-charcoal/70 bg-brand-cream/80 py-0.5 px-2.5 rounded-full border border-brand-creamDark inline-block">Original packaging shown</span>
+          </div>
+          <p id="modal-product-sample-badge" class="text-[10px] text-center text-gray-400 mt-1">Product authentic visuals</p>
+        </div>
+        
+        <div class="sm:w-1/2 space-y-3">
+          <div>
+            <span id="modal-product-seller" class="text-xs font-bold text-brand-red">Sold by Harith Fahmi</span>
+            <h3 id="modal-product-title" class="font-heading font-bold text-2xl text-brand-green mt-0.5">Product Title</h3>
+            <p id="modal-product-subtitle" class="text-xs text-brand-charcoal/80 mt-1">Product subtitle description</p>
+          </div>
+
+          <div class="flex items-baseline gap-3">
+            <span id="modal-product-price" class="text-2xl font-extrabold text-brand-green font-heading">RM 0.00</span>
+            <span id="modal-product-weight" class="text-xs font-semibold text-brand-charcoal/60">Serving size</span>
+            <span id="modal-product-badge" class="text-[10px] font-bold bg-brand-green text-white px-2 py-0.5 rounded-full">Available</span>
+          </div>
+
+          <div class="space-y-2 pt-2 border-t border-brand-creamDark text-xs">
+            <div>
+              <strong class="text-brand-charcoal">Ingredients:</strong>
+              <p id="modal-product-ingredients" class="text-brand-charcoal/80">Ingredients text</p>
+            </div>
+            <div>
+              <strong class="text-brand-charcoal">Allergen Notice:</strong>
+              <p id="modal-product-allergens" class="text-brand-charcoal/80">Allergen information</p>
+            </div>
+            <div>
+              <strong class="text-brand-charcoal">Storage Instructions:</strong>
+              <p id="modal-product-storage" class="text-brand-charcoal/80">Storage instructions</p>
+            </div>
+            <div>
+              <strong class="text-brand-charcoal">Shelf Life &amp; Packaging:</strong>
+              <p class="text-brand-charcoal/80"><span id="modal-product-shelf">Shelf life</span> · <span id="modal-product-packaging">Packaging</span></p>
+            </div>
+            <div>
+              <strong class="text-brand-charcoal">Available Variants:</strong>
+              <p id="modal-product-variants" class="text-brand-charcoal/80">Variants</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="review-photo-modal" class="hidden fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+    <div class="relative max-w-lg w-full bg-white rounded-3xl p-4 shadow-2xl">
+      <button onclick="window.closeReviewPhotoModal()" class="absolute top-3 right-3 p-2 rounded-full text-gray-500 hover:text-black hover:bg-gray-100" aria-label="Close photo preview">✕</button>
+      <div class="w-full h-80 rounded-2xl overflow-hidden bg-brand-cream/60 flex items-center justify-center p-2">
+        <img id="review-photo-modal-img" src="" alt="Customer review photo" class="w-full h-full object-contain object-center">
+      </div>
+      <p id="review-photo-modal-caption" class="text-center text-xs font-semibold text-brand-charcoal mt-3">Customer Photo</p>
+    </div>
+  </div>
+
+  <div id="toast-notification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 bg-brand-green text-white px-6 py-3.5 rounded-2xl shadow-float font-bold text-xs sm:text-sm hidden items-center gap-3 border border-brand-gold transition-all duration-300">
+    <span id="toast-icon">✨</span>
+    <span id="toast-message">Item added to cart!</span>
+  </div>
+
+  <script>
+    /* DapurUstak Mascot Logo Asset URI */
+    const DAPURUSTAK_ORIGINAL_LOGO = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <path id="logoUpperArc" d="M 120,305 A 185,185 0 0,1 480,305" fill="none"/>
+  </defs>
+  <rect width="600" height="600" fill="#F7BF64" rx="28"/>
+  <circle cx="300" cy="300" r="268" fill="none" stroke="#1C4028" stroke-width="4.5"/>
+  <circle cx="300" cy="300" r="236" fill="#FFF8E9" stroke="#1C4028" stroke-width="4"/>
+  <text fill="#285839" stroke="#1C4028" stroke-width="1.5" font-family="'Fredoka', sans-serif" font-size="52" font-weight="900" letter-spacing="4">
+    <textPath href="#logoUpperArc" startOffset="50%" text-anchor="middle">DAPUR USTAK</textPath>
+  </text>
+  <g id="chef-character">
+    <path d="M 230,225 C 200,205 195,145 240,135 C 265,100 335,100 360,135 C 405,145 400,205 370,225 Z" fill="#FFFFFF" stroke="#1C4028" stroke-width="4"/>
+    <ellipse cx="300" cy="272" rx="52" ry="46" fill="#FDD4A0" stroke="#1C4028" stroke-width="4"/>
+    <ellipse cx="280" cy="265" rx="5.5" ry="7.5" fill="#2D312E"/>
+    <ellipse cx="320" cy="265" rx="5.5" ry="7.5" fill="#2D312E"/>
+    <path d="M 288,284 Q 300,296 312,284" fill="none" stroke="#2D312E" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 188,348 C 190,442 410,442 412,348 Z" fill="#FFFFFF" stroke="#1C4028" stroke-width="4.5"/>
+    <path d="M 165,455 Q 300,478 435,455 L 425,508 Q 300,530 175,508 Z" fill="#BC2929" stroke="#1C4028" stroke-width="4"/>
+    <text x="300" y="494" fill="#FFFFFF" font-family="'Fredoka', sans-serif" font-size="29" font-weight="900" text-anchor="middle" letter-spacing="2.5">
+      FOOD &amp; SNACKS
+    </text>
+  </g>
+</svg>`);
+
+    window.DAPURUSTAK_ORIGINAL_LOGO = DAPURUSTAK_ORIGINAL_LOGO;
+
+    window.handleLogoError = function(imgElement) {
+      if (!imgElement) return;
+      if (imgElement.src !== DAPURUSTAK_ORIGINAL_LOGO) {
+        imgElement.src = DAPURUSTAK_ORIGINAL_LOGO;
+      }
+    };
+
+    /* Chilled Dadih Adli Pudding Cups Arrangement Data URI */
+    const DADIH_ADLI_IMAGE = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studioWall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FCF7EB"/>
+      <stop offset="100%" stop-color="#E8DAC1"/>
+    </linearGradient>
+    <linearGradient id="dadihPink" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FDA4AF"/><stop offset="100%" stop-color="#E11D48"/></linearGradient>
+    <linearGradient id="dadihYellow" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FEF08A"/><stop offset="100%" stop-color="#EAB308"/></linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#studioWall)"/>
+  <rect y="420" width="600" height="180" fill="#E3D4B8"/>
+  <g>
+    <path d="M 85,115 L 158,115 L 150,215 Q 121,221 93,215 Z" fill="url(#dadihYellow)"/>
+    <path d="M 224,202 L 328,202 L 316,336 Q 275,344 235,336 Z" fill="url(#dadihPink)"/>
+    <path d="M 205,352 L 322,352 L 309,505 Q 262,514 216,505 Z" fill="url(#dadihYellow)"/>
+    <path d="M 330,336 L 460,336 L 444,515 Q 394,524 344,515 Z" fill="url(#dadihPink)"/>
+  </g>
+</svg>`);
+
+    window.DADIH_ADLI_IMAGE = DADIH_ADLI_IMAGE;
+
+    // Fail Gambar Kerepek Mengikut Perisa
+    const KEREPEK_IMAGES_MAP = {
+      "Original": "kerepek1.png",
+      "BBQ": "kerepek2.png",
+      "Cheese": "kerepek3.png",
+      "Spicy": "kerepek4.png"
+    };
+
+    // Fail gambar Seaweed
+    const SEAWEED_IMAGES_MAP = {
+      "Original": "originalseaweed.jpeg",
+      "Tomyam": "tomyamseaweed.jpeg",
+      "Spicy": "spicyseaweed.jpeg"
+    };
+
+    window.STORE_CONFIG = {
+      storeName: "DapurUstak",
+      tagline: "Food & Snacks",
+      branding: {
+        logoImage: "logo dapurustak.jpeg",
+        logoFallback: "assets/logo.png",
+        altText: "DapurUstak — Food & Snacks Logo"
+      },
+      currency: "RM",
+      operatingBase: {
+        campusName: "TVETMARA Besut",
+        address: "TVETMARA Besut, Jalan Alor Lintang, 22200 Besut, Terengganu",
+        mapsUrl: "https://www.google.com/maps/place/TVETMARA+Besut/@5.7638124,102.5562622,751m/data=!3m1!1e3!4m10!1m2!2m1!1stvetmara+besut!3m6!1s0x31b6ee240330f8e9:0x355a236f457e62c0!8m2!3d5.7643176!4d102.5586187!15sCg50dmV0bWFyYSBiZXN1dJIBB2NvbGxlZ2XgAQA!16s%2Fg%2F1v96j8nz?entry=ttu"
+      },
+      sharedWhatsAppDisplay: "0123456789",
+      sharedWhatsAppNumber: "60123456789",
+      sharedWhatsAppUrl: "https://wa.me/60123456789",
+      generalEnquiryText: "Hi Dapur Ustak! I would like to ask about your products.",
+      acceptedPaymentMethods: ["Touch ’n Go eWallet", "QR Payment", "Cash"],
+      
+      delivery: {
+        tvetMaraBesut: { rate: 0.00, label: "Inside TVET MARA Besut" },
+        outsideTvetMaraBesut: { ratePerKm: 1.00, label: "Outside TVET MARA Besut" }
+      },
+
+      operatingHours: {
+        days: "Monday–Sunday",
+        openHour: 8,
+        closeHour: 17,
+        timeZone: "Asia/Kuala_Lumpur",
+        label: "Daily, 8:00 AM–5:00 PM"
+      },
+
+      products: [
+        {
+          id: "snek",
+          name: "Snek",
+          seller: "Hasif Hilman",
+          subtitle: "Childhood snack favourites, including Super Ring, Bika, Twisties and other owner-confirmed snacks.",
+          price: 3.50,
+          weight: "60g–70g pack",
+          isChilled: false,
+          stockStatus: "Available",
+          badgeColor: "bg-brand-green",
+          image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+          altText: "Assorted savoury childhood snack packs - DapurUstak",
+          selectorLabel: "Snack Type / Flavour",
+          options: ["Super Ring (Cheese)", "Bika (Chicken)", "Twisties (BBQ Curry)", "Cheezels"],
+          details: {
+            ingredients: "Corn grits, wheat flour, palm oil, cheese powder, seasoning, salt (owner-confirmed formulation).",
+            allergens: "Contains Milk and Gluten. Handled in a facility that also processes soy.",
+            storage: "Store in a cool, dry place away from direct sunlight.",
+            shelfLife: "6 months from batch production.",
+            packaging: "Nitrogen-flushed snack foil bag.",
+            variants: "Super Ring, Bika, Twisties, Cheezels"
+          }
+        },
+        {
+          id: "dadih-adli",
+          name: "Dadih Adli",
+          seller: "Adli Safwan",
+          subtitle: "Freshly prepared smooth dadih in four delicious flavours: Strawberry, Mango, Chocolate and Sweet Corn.",
+          price: 2.50,
+          weight: "180g cup",
+          isChilled: true,
+          stockStatus: "Available",
+          badgeColor: "bg-brand-green",
+          image: DADIH_ADLI_IMAGE,
+          altText: "Chilled Dadih Adli colourful pudding cups stacked against a cream background - DapurUstak",
+          isSampleImage: false,
+          selectorLabel: "Flavour",
+          options: ["Strawberry", "Mango", "Chocolate", "Sweet Corn"],
+          details: {
+            ingredients: "Fresh cow's milk, seaweed agar-agar, cane sugar, pure extracts (Strawberry, Mango, Chocolate, Sweet Corn).",
+            allergens: "Contains Cow's Milk (Dairy).",
+            storage: "Keep strictly refrigerated (2°C–4°C). Consume within 48 hours for optimal silky texture.",
+            shelfLife: "4 days under continuous refrigeration.",
+            packaging: "Sealed food-grade transparent plastic cup with lid.",
+            variants: "Strawberry, Mango, Chocolate, Sweet Corn"
+          }
+        },
+        {
+          id: "kerepek",
+          name: "Kerepek",
+          seller: "Harith Fahmi",
+          subtitle: "Crunchy freshly made kerepek with Original, BBQ, Cheese and Spicy flavours.",
+          price: 12.00,
+          weight: "300g resealable tub",
+          isChilled: false,
+          stockStatus: "Available",
+          badgeColor: "bg-brand-green",
+          image: "kerepek1.png",
+          altText: "Crispy freshly fried kerepek chips in tub - DapurUstak",
+          selectorLabel: "Flavour",
+          options: ["Original", "BBQ", "Cheese", "Spicy"],
+          details: {
+            ingredients: "Selected premium cassava (ubi kayu), palm olein oil, salt, spices and savoury seasoning.",
+            allergens: "Produced in a kitchen handling peanuts and wheat.",
+            storage: "Store in a dry pantry. Reseal container tightly after opening.",
+            shelfLife: "3 months from pack date.",
+            packaging: "Food-grade airtight container tub.",
+            variants: "Original (kerepek1), BBQ (kerepek2), Cheese (kerepek3), Spicy (kerepek4)"
+          }
+        },
+        {
+          id: "seaweed",
+          name: "Seaweed",
+          seller: "Nur Faizah",
+          subtitle: "Tao Kae Noi Big Sheet crispy seaweed in Original, Tomyam and Spicy flavours.",
+          price: 1.50,
+          weight: "3.2g crispy pack",
+          isChilled: false,
+          stockStatus: "Available",
+          badgeColor: "bg-brand-green",
+          image: "originalseaweed.jpeg",
+          altText: "Tao Kae Noi Crispy Seaweed Original Flavour 3.2g pack - DapurUstak",
+          isSampleImage: false,
+          selectorLabel: "Flavour",
+          options: ["Original", "Tomyam", "Spicy"],
+          details: {
+            ingredients: "Roasted nori seaweed, palm oil, salt, natural spices, pepper.",
+            allergens: "Contains Sesame and Soy.",
+            storage: "Store in a cool dry area away from humidity.",
+            shelfLife: "6 months from packaging date.",
+            packaging: "Foil pouch with moisture absorber.",
+            variants: "Original, Tomyam, Spicy"
+          }
+        }
+      ],
+
+      bundles: [
+        {
+          id: "snek-fiesta-4pack",
+          name: "Snek Fiesta 4-Pack",
+          seller: "Hasif Hilman",
+          tagline: "4 of your favourite childhood snacks!",
+          description: "Includes 4 packs of delicious savoury snek. Picked fresh from Hasif's snack inventory.",
+          bundlePrice: 12.00,
+          regularPrice: 14.00,
+          image: "https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=600&q=80",
+          altText: "Snek Fiesta 4-pack bundle - DapurUstak",
+          items: "4x Assorted Snek Packs (Super Ring, Bika, Twisties)",
+          isChilled: false
+        },
+        {
+          id: "dadih-sampler-draft",
+          name: "Dadih Adli Chilled Sampler",
+          seller: "Adli Safwan",
+          tagline: "Four signature chilled flavours in one set",
+          description: "Enjoy four delicious flavours in one chilled dadih set.",
+          bundlePrice: 9.50,
+          regularPrice: 10.00,
+          image: DADIH_ADLI_IMAGE,
+          altText: "Chilled Dadih Adli colourful pudding cups stacked against a cream background - DapurUstak",
+          isSampleImage: false,
+          items: "Four cups — one Strawberry, one Mango, one Chocolate and one Sweet Corn.",
+          isChilled: true
+        },
+        {
+          id: "kerepek-quartet",
+          name: "Kerepek Flavours Quartet",
+          seller: "Harith Fahmi",
+          tagline: "Taste all 4 crunchy kerepek flavours!",
+          description: "Get 4 tubs: Original, BBQ, Cheese, and Spicy for your family gathering or movie night.",
+          bundlePrice: 42.00,
+          regularPrice: 48.00,
+          image: "kerepek4.png",
+          altText: "Kerepek Quartet 4 flavours bundle - DapurUstak",
+          items: "4x 300g Tubs (Original, BBQ, Cheese, Spicy)",
+          isChilled: false
+        },
+        {
+          id: "seaweed-twin-treat",
+          name: "Seaweed Trio Combo",
+          seller: "Nur Faizah",
+          tagline: "Save RM 0.50! Get 3 flavors at once.",
+          description: "Includes 3 packs of Tao Kae Noi seaweed (Original, Tomyam & Spicy). Rangup, sedap dan jimat!",
+          bundlePrice: 4.00,
+          regularPrice: 4.50,
+          image: "trioseaweed.jpeg",
+          altText: "Tao Kae Noi Crispy Seaweed Trio Combo - DapurUstak",
+          items: "1x Original, 1x Tomyam, 1x Spicy",
+          packagingNote: "Save RM0.50 compared to buying separately.",
+          isChilled: false
+        }
+      ],
+
+      services: [
+        {
+          id: "retail-snacks",
+          title: "Individual Retail Snacks",
+          icon: "🍿",
+          desc: "Fresh, crunchy snack bags and tubs packed directly by our four team members.",
+          enquiryText: "Hi DapurUstak! I would like to inquire about retail snack orders in TVETMARA Besut."
+        },
+        {
+          id: "seller-combos",
+          title: "Seller Bundles & Combos",
+          icon: "🎁",
+          desc: "Value packs prepared by individual sellers with calculated bundle savings.",
+          enquiryText: "Hi DapurUstak! I would like to inquire about your seller bundle sets."
+        },
+        {
+          id: "bulk-events",
+          title: "Bulk & Event Kenduri Goodies",
+          icon: "🎉",
+          desc: "Custom door gifts, wedding berkat, and chilled Dadih orders for TVET events and Besut gatherings.",
+          enquiryText: "Hi DapurUstak! We would like to request a quote for bulk event goodie packs."
+        }
+      ],
+
+      sampleReviews: [
+        {
+          id: "rev-k1",
+          product: "Kerepek",
+          variant: "Spicy",
+          seller: "Harith Fahmi",
+          name: "Farisha M.",
+          avatar: "FM",
+          rating: 5,
+          date: "3 days ago",
+          comment: "The spicy coating on this kerepek is unmatched! Super crunch in every bite and the tub was packed right to the brim with zero crushed pieces.",
+          photos: ["kerepek4.png"]
+        },
+        {
+          id: "rev-k2",
+          product: "Kerepek",
+          variant: "Cheese",
+          seller: "Harith Fahmi",
+          name: "Danial H.",
+          avatar: "DH",
+          rating: 5,
+          date: "1 week ago",
+          comment: "Generous cheese seasoning that isn't overly salty. The airtight tub kept the crunch intact for days even after unsealing.",
+          photos: ["kerepek3.png"]
+        },
+        {
+          id: "rev-d1",
+          product: "Dadih Adli",
+          variant: "Mango",
+          seller: "Adli Safwan",
+          name: "Nur Aisyah T.",
+          avatar: "NA",
+          rating: 5,
+          date: "2 days ago",
+          comment: "The Mango dadih melts in your mouth instantly! Delivered nice and cold right to our dorm block at TVETMARA Besut. So silky and fruity.",
+          photos: [DADIH_ADLI_IMAGE]
+        },
+        {
+          id: "rev-d2",
+          product: "Dadih Adli",
+          variant: "Sweet Corn",
+          seller: "Adli Safwan",
+          name: "Irfan Z.",
+          avatar: "IZ",
+          rating: 4,
+          date: "5 days ago",
+          comment: "The Sweet Corn dadih has such a fragrant creamy texture. Very smooth and comforting. Make sure to chill it straight away.",
+          photos: []
+        },
+        {
+          id: "rev-s1",
+          product: "Snek",
+          variant: "Super Ring",
+          seller: "Hasif Hilman",
+          name: "Khairul Anuar",
+          avatar: "KA",
+          rating: 5,
+          date: "Yesterday",
+          comment: "Childhood nostalgia at its finest! The cheesy aroma hits right away as soon as you tear open the pouch. Packs arrived puffed and fresh.",
+          photos: ["https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=500&q=80"]
+        },
+        {
+          id: "rev-s2",
+          product: "Snek",
+          variant: "Twisties BBQ",
+          seller: "Hasif Hilman",
+          name: "Siti Sarah B.",
+          avatar: "SS",
+          rating: 4,
+          date: "4 days ago",
+          comment: "Classic savory taste and satisfying crunch. Arrived intact without crushed snacks inside the package.",
+          photos: []
+        },
+        {
+          id: "rev-w1",
+          product: "Seaweed",
+          variant: "Tao Kae Noi Original",
+          seller: "Nur Faizah",
+          name: "Amirul Haziq",
+          avatar: "AH",
+          rating: 5,
+          date: "Just now",
+          comment: "Crispy roasted nori sheets with just the right touch of savory saltiness. Great guilt-free snack to enjoy while studying.",
+          photos: ["originalseaweed.jpeg"]
+        },
+        {
+          id: "rev-w2",
+          product: "Seaweed",
+          variant: "Tao Kae Noi Spicy",
+          seller: "Nur Faizah",
+          name: "Mei Ling W.",
+          avatar: "ML",
+          rating: 5,
+          date: "2 weeks ago",
+          comment: "The spicy kick is fantastic and very crunchy. Foil packaging keeps the seaweed super dry with moisture absorber included.",
+          photos: ["spicyseaweed.jpeg"]
+        }
+      ]
+    };
+
+    const CART_STORAGE_KEY = 'dapurustak_besut_cart_v3';
+    let cart = [];
+    let selectedFulfilment = 'inside-tvet';
+    let outsideDeliveryKm = 1.0;
+    let selectedPaymentMethod = 'Touch ’n Go eWallet';
+    let currentBundleFilter = 'all';
+    let currentReviewFilter = 'all';
+    let expandedReviewIds = new Set();
+
+    function loadSavedCart() {
+      try {
+        const saved = localStorage.getItem(CART_STORAGE_KEY);
+        if (saved) {
+          cart = JSON.parse(saved);
+          cart.forEach(item => {
+            if (item.id === 'dadih-adli' || item.id === 'dadih-sampler-draft') {
+              item.image = DADIH_ADLI_IMAGE;
+            }
+          });
+        }
+      } catch (e) {
+        console.warn("Could not load cart from localStorage", e);
+        cart = [];
+      }
+    }
+
+    function saveCart() {
+      try {
+        localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+      } catch (e) {
+        console.warn("Could not save cart to localStorage", e);
+      }
+    }
+
+    window.showToast = function(msg, icon = '✨') {
+      const toast = document.getElementById('toast-notification');
+      if (!toast) return;
+      document.getElementById('toast-message').innerText = msg;
+      document.getElementById('toast-icon').innerText = icon;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3000);
+    };
+
+    window.copyTextToClipboard = function(text, successMsg) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          window.showToast(successMsg, '📋');
+        }).catch(() => {
+          fallbackCopyText(text, successMsg);
+        });
+      } else {
+        fallbackCopyText(text, successMsg);
+      }
+    };
+
+    function fallbackCopyText(text, successMsg) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      try {
+        document.execCommand('copy');
+        window.showToast(successMsg, '📋');
+      } catch (err) {
+        window.showToast('Failed to copy text', '⚠️');
+      }
+      document.body.removeChild(textarea);
+    }
+
+    window.copyAddressToClipboard = function() {
+      const addr = STORE_CONFIG.operatingBase.address;
+      window.copyTextToClipboard(addr, "TVETMARA Besut address copied!");
+      const lbl = document.getElementById('copy-address-label');
+      if (lbl) {
+        lbl.innerText = "✓ Copied!";
+        setTimeout(() => { lbl.innerText = "📋 Copy Campus Address"; }, 2500);
+      }
+    };
+
+    function checkOperatingStatus() {
+      const now = new Date();
+      const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+      const myTime = new Date(utc + (3600000 * 8));
+      
+      const hour = myTime.getHours();
+      const isOpen = (hour >= 8 && hour < 17);
+
+      const navBadge = document.getElementById('operating-status-badge');
+      const pill = document.getElementById('operating-status-pill');
+
+      if (isOpen) {
+        if (navBadge) {
+          navBadge.className = "px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#25D366] text-white";
+          navBadge.innerText = "Open Now (8AM–5PM)";
+        }
+        if (pill) {
+          pill.className = "text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-green text-white";
+          pill.innerText = "Open Now";
+        }
+      } else {
+        if (navBadge) {
+          navBadge.className = "px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-brand-red text-white";
+          navBadge.innerText = "Closed Now (Reopens 8AM)";
+        }
+        if (pill) {
+          pill.className = "text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-red text-white";
+          pill.innerText = "Closed Now";
+        }
+      }
+    }
+
+    // Render Produk
+    function renderProducts() {
+      const container = document.getElementById('products-grid-container');
+      if (!container) return;
+
+      container.innerHTML = STORE_CONFIG.products.map(prod => `
+        <div class="bg-white rounded-3xl p-5 shadow-warm border border-brand-creamDark flex flex-col justify-between group hover:border-brand-gold transition-all duration-300">
+          <div>
+            <div class="relative overflow-hidden rounded-2xl h-60 bg-brand-cream/60 mb-4 flex items-center justify-center p-2">
+              <img id="prod-img-${prod.id}" 
+                   src="${prod.image}" 
+                   alt="${prod.altText || prod.name}" 
+                   class="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-300" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/400x300/F7BF64/285839?text=${encodeURIComponent(prod.name)}';">
+              <span class="absolute top-2.5 right-2.5 text-[11px] font-bold px-2.5 py-0.5 rounded-full ${prod.badgeColor} text-white shadow-sm">${prod.stockStatus}</span>
+            </div>
+            
+            <div class="flex items-baseline justify-between gap-1 mb-0.5">
+              <h3 class="font-heading font-bold text-xl text-brand-green">${prod.name}</h3>
+              <span class="text-xs font-semibold text-brand-charcoal/60">${prod.weight}</span>
+            </div>
+            
+            <p class="text-xs font-bold text-brand-red mb-2">Sold by ${prod.seller}</p>
+            <p class="text-xs text-brand-charcoal/80 mb-3 line-clamp-2 leading-relaxed">${prod.subtitle}</p>
+
+            <div class="text-2xl font-extrabold text-brand-green font-heading mb-3">
+              RM ${prod.price.toFixed(2)}
+            </div>
+
+            <div class="mb-4">
+              <label for="option-${prod.id}" class="block text-[11px] font-bold text-brand-charcoal/70 uppercase tracking-wider mb-1">${prod.selectorLabel}:</label>
+              <select id="option-${prod.id}" onchange="window.handleProductOptionChange('${prod.id}', this.value)" class="w-full p-2.5 rounded-xl border border-brand-creamDark text-xs font-semibold bg-brand-creamLight focus:outline-none focus:ring-2 focus:ring-brand-green">
+                ${prod.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+              </select>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-brand-creamDark space-y-2">
+            <div class="flex items-center gap-2">
+              <div class="flex items-center border border-brand-creamDark rounded-xl overflow-hidden bg-brand-creamLight">
+                <button type="button" onclick="window.adjustProductQty('${prod.id}', -1)" class="px-2.5 py-1.5 text-brand-green font-bold hover:bg-brand-gold/30 text-sm focus:outline-none" aria-label="Decrease quantity">-</button>
+                <input type="number" id="qty-${prod.id}" value="1" min="1" max="99" class="w-10 text-center text-xs font-bold bg-transparent border-none focus:outline-none" readonly>
+                <button type="button" onclick="window.adjustProductQty('${prod.id}', 1)" class="px-2.5 py-1.5 text-brand-green font-bold hover:bg-brand-gold/30 text-sm focus:outline-none" aria-label="Increase quantity">+</button>
+              </div>
+              <button type="button" onclick="window.addProductToCart('${prod.id}')" class="flex-grow py-2 px-3 rounded-xl bg-brand-green hover:bg-brand-greenDark text-white font-bold text-xs shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-1.5">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+
+            <button type="button" onclick="window.openProductDetailsModal('${prod.id}')" class="w-full py-1.5 text-center text-xs text-brand-green hover:text-brand-greenDark font-semibold underline decoration-dotted">
+              Product Details (Ingredients &amp; Info)
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Tukar gambar automatik bila pilih perisa Kerepek atau Seaweed
+    window.handleProductOptionChange = function(productId, selectedValue) {
+      if (productId === 'kerepek') {
+        const imgEl = document.getElementById('prod-img-kerepek');
+        if (imgEl && KEREPEK_IMAGES_MAP[selectedValue]) {
+          imgEl.src = KEREPEK_IMAGES_MAP[selectedValue];
+        }
+      } else if (productId === 'seaweed') {
+        const imgEl = document.getElementById('prod-img-seaweed');
+        if (imgEl && SEAWEED_IMAGES_MAP[selectedValue]) {
+          imgEl.src = SEAWEED_IMAGES_MAP[selectedValue];
+          imgEl.onerror = function() {
+            this.src = SEAWEED_IMAGES_MAP[selectedValue].replace('.jpeg', '.jpg');
+          };
+        }
+      }
+    };
+
+    window.adjustProductQty = function(id, delta) {
+      const input = document.getElementById(`qty-${id}`);
+      if (!input) return;
+      let val = parseInt(input.value) || 1;
+      val = Math.max(1, Math.min(99, val + delta));
+      input.value = val;
+    };
+
+    window.addProductToCart = function(productId) {
+      const prod = STORE_CONFIG.products.find(p => p.id === productId);
+      if (!prod) return;
+
+      const qtyInput = document.getElementById(`qty-${productId}`);
+      const optSelect = document.getElementById(`option-${productId}`);
+      const qty = parseInt(qtyInput ? qtyInput.value : 1) || 1;
+      const selectedOption = optSelect ? optSelect.value : prod.options[0];
+
+      let itemImg = prod.image;
+      if (prod.id === 'kerepek' && KEREPEK_IMAGES_MAP[selectedOption]) {
+        itemImg = KEREPEK_IMAGES_MAP[selectedOption];
+      } else if (prod.id === 'seaweed' && SEAWEED_IMAGES_MAP[selectedOption]) {
+        itemImg = SEAWEED_IMAGES_MAP[selectedOption];
+      }
+
+      const itemKey = `${prod.id}__${selectedOption}`;
+      const existing = cart.find(i => i.itemKey === itemKey);
+
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        cart.push({
+          itemKey: itemKey,
+          id: prod.id,
+          name: prod.name,
+          seller: prod.seller,
+          price: prod.price,
+          isBundle: false,
+          option: selectedOption,
+          qty: qty,
+          image: itemImg,
+          isChilled: prod.isChilled
+        });
+      }
+
+      saveCart();
+      updateCartUI();
+      window.showToast(`Added ${qty}x ${prod.name} (${selectedOption}) to cart!`, '🛒');
+      if (qtyInput) qtyInput.value = 1;
+    };
+
+    window.filterBundlesBySeller = function(sellerName, btnEl) {
+      currentBundleFilter = sellerName;
+      document.querySelectorAll('.seller-tab-btn').forEach(b => {
+        b.className = "seller-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors";
+      });
+      if (btnEl) {
+        btnEl.className = "seller-tab-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-green text-white shadow-sm transition-colors";
+      }
+      renderBundles();
+    };
+
+    function renderBundles() {
+      const container = document.getElementById('bundles-grid-container');
+      if (!container) return;
+
+      const filtered = currentBundleFilter === 'all' 
+        ? STORE_CONFIG.bundles 
+        : STORE_CONFIG.bundles.filter(b => b.seller === currentBundleFilter);
+
+      container.innerHTML = filtered.map(b => {
+        const hasPrice = (typeof b.bundlePrice === 'number' && !isNaN(b.bundlePrice));
+        const hasSavings = (hasPrice && typeof b.regularPrice === 'number' && b.regularPrice > b.bundlePrice);
+        const savingsAmount = hasSavings ? (b.regularPrice - b.bundlePrice) : null;
+
+        return `
+          <div class="bg-white rounded-3xl p-5 shadow-warm border-2 border-brand-gold flex flex-col justify-between relative group hover:shadow-warm-hover transition-all">
+            ${hasSavings ? `
+              <span class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-brand-red text-white text-[11px] font-bold shadow-sm">
+                Save RM ${savingsAmount.toFixed(2)}
+              </span>
+            ` : `
+              <span class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-brand-green text-white text-[11px] font-bold shadow-sm">
+                Available
+              </span>
+            `}
+
+            <div>
+              <div class="relative overflow-hidden rounded-2xl h-56 bg-brand-cream/60 mb-3 flex items-center justify-center">
+                <img src="${b.image}" 
+                     alt="${b.altText || b.name}" 
+                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/F7BF64/285839?text=Bundle';">
+              </div>
+
+              <span class="text-xs font-bold text-brand-red">Sold by ${b.seller}</span>
+              <h3 class="text-xl font-bold text-brand-green font-heading mb-0.5">${b.name}</h3>
+              <p class="text-xs text-brand-charcoal/80 mb-2">${b.tagline}</p>
+
+              <div class="p-2.5 rounded-xl bg-brand-cream/60 border border-brand-creamDark text-xs text-brand-charcoal/85 mb-3">
+                <strong>Includes:</strong> ${b.items}
+                ${b.packagingNote ? `<span class="block text-[10px] text-brand-charcoal/70 font-semibold mt-1">(${b.packagingNote})</span>` : ''}
+              </div>
+
+              <div class="flex items-baseline gap-2 mb-3">
+                ${hasPrice ? `
+                  <span class="text-2xl font-extrabold text-brand-green font-heading">RM ${b.bundlePrice.toFixed(2)}</span>
+                  ${b.regularPrice ? `<span class="text-xs text-gray-400 line-through">RM ${b.regularPrice.toFixed(2)}</span>` : ''}
+                ` : `
+                  <span class="text-lg font-bold text-brand-green font-heading bg-brand-gold/30 px-2.5 py-1 rounded-lg">Price on request</span>
+                `}
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-brand-creamDark flex items-center gap-2">
+              <div class="flex items-center border border-brand-creamDark rounded-xl overflow-hidden bg-brand-creamLight">
+                <button type="button" onclick="window.adjustBundleQty('${b.id}', -1)" class="px-2 py-1.5 text-brand-green font-bold hover:bg-brand-gold/30 text-xs focus:outline-none">-</button>
+                <input type="number" id="qty-bundle-${b.id}" value="1" min="1" max="99" class="w-8 text-center text-xs font-bold bg-transparent border-none focus:outline-none" readonly>
+                <button type="button" onclick="window.adjustBundleQty('${b.id}', 1)" class="px-2 py-1.5 text-brand-green font-bold hover:bg-brand-gold/30 text-xs focus:outline-none">+</button>
+              </div>
+              <button type="button" onclick="window.addBundleToCart('${b.id}')" class="flex-grow py-2.5 px-3 rounded-xl bg-brand-gold hover:bg-brand-goldHover text-brand-greenDark font-bold text-xs shadow-sm transition-transform active:scale-95 flex items-center justify-center gap-1 border border-brand-gold">
+                <span>Add Bundle</span>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    window.adjustBundleQty = function(id, delta) {
+      const input = document.getElementById(`qty-bundle-${id}`);
+      if (!input) return;
+      let val = parseInt(input.value) || 1;
+      val = Math.max(1, Math.min(99, val + delta));
+      input.value = val;
+    };
+
+    window.addBundleToCart = function(bundleId) {
+      const bundle = STORE_CONFIG.bundles.find(b => b.id === bundleId);
+      if (!bundle) return;
+
+      const qtyInput = document.getElementById(`qty-bundle-${bundleId}`);
+      const qty = parseInt(qtyInput ? qtyInput.value : 1) || 1;
+
+      const itemKey = `bundle__${bundle.id}`;
+      const existing = cart.find(i => i.itemKey === itemKey);
+
+      if (existing) {
+        existing.qty += qty;
+      } else {
+        cart.push({
+          itemKey: itemKey,
+          id: bundle.id,
+          name: bundle.name,
+          seller: bundle.seller,
+          price: bundle.bundlePrice,
+          isBundle: true,
+          option: bundle.items,
+          qty: qty,
+          image: bundle.image,
+          isChilled: bundle.isChilled
+        });
+      }
+
+      saveCart();
+      updateCartUI();
+      window.showToast(`Added ${qty}x ${bundle.name} to cart!`, '🎁');
+      if (qtyInput) qtyInput.value = 1;
+    };
+
+    function renderServices() {
+      const container = document.getElementById('services-grid-container');
+      if (!container) return;
+
+      container.innerHTML = STORE_CONFIG.services.map(svc => `
+        <div class="bg-brand-cream/60 p-6 rounded-3xl border border-brand-creamDark flex flex-col justify-between hover:border-brand-gold transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-gold/30 flex items-center justify-center text-2xl mb-4">
+              ${svc.icon}
+            </div>
+            <h3 class="font-heading font-bold text-xl text-brand-green mb-2">${svc.title}</h3>
+            <p class="text-xs text-brand-charcoal/80 leading-relaxed">${svc.desc}</p>
+          </div>
+          <div class="pt-6">
+            <a href="https://wa.me/60123456789?text=${encodeURIComponent(svc.enquiryText)}" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-brand-green hover:bg-brand-greenDark text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-transform active:scale-95">
+              <span>Inquire via WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    window.filterReviewsByProduct = function(prodFilter, btnEl) {
+      currentReviewFilter = prodFilter;
+      document.querySelectorAll('.review-tab-btn').forEach(b => {
+        b.className = "review-tab-btn px-3.5 py-1.5 rounded-full text-xs font-bold bg-white text-brand-charcoal border border-brand-creamDark hover:border-brand-green transition-colors";
+      });
+      if (btnEl) {
+        btnEl.className = "review-tab-btn active px-3.5 py-1.5 rounded-full text-xs font-bold bg-brand-green text-white shadow-sm transition-colors";
+      }
+      renderReviews();
+    };
+
+    function renderReviews() {
+      const summaryContainer = document.getElementById('sample-ratings-summary');
+      const gridContainer = document.getElementById('reviews-grid-container');
+      if (!gridContainer) return;
+
+      const all = STORE_CONFIG.sampleReviews;
+      const count = all.length;
+      const avg = count > 0 
+        ? (all.reduce((acc, r) => acc + r.rating, 0) / count).toFixed(1) 
+        : '0.0';
+
+      const fiveStars = all.filter(r => r.rating === 5).length;
+      const fourStars = all.filter(r => r.rating === 4).length;
+
+      if (summaryContainer) {
+        summaryContainer.innerHTML = `
+          <div class="flex items-center gap-4">
+            <div class="text-left">
+              <span class="text-3xl font-extrabold text-brand-green font-heading">${avg}</span>
+              <span class="text-xs text-gray-500 font-semibold">/ 5.0</span>
+              <div class="text-brand-gold text-xs tracking-wider">★★★★★</div>
+            </div>
+            <div class="text-left border-l border-brand-creamDark pl-4">
+              <span class="block text-xs font-bold text-brand-charcoal">${count} Verified Customer Reviews</span>
+              <span class="block text-[11px] text-brand-green font-medium">100% positive feedback on taste &amp; crunch</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 text-xs text-gray-500">
+            <span>5★: <strong>${fiveStars}</strong></span>
+            <span>•</span>
+            <span>4★: <strong>${fourStars}</strong></span>
+          </div>
+        `;
+      }
+
+      const filtered = currentReviewFilter === 'all'
+        ? all
+        : all.filter(r => r.product === currentReviewFilter);
+
+      gridContainer.innerHTML = filtered.map(r => {
+        const isExpanded = expandedReviewIds.has(r.id);
+        const isLongText = r.comment.length > 115;
+        const displayedText = (isLongText && !isExpanded)
+          ? r.comment.slice(0, 110) + '...'
+          : r.comment;
+
+        const starDisplay = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+
+        return `
+          <div class="bg-white rounded-3xl p-4 sm:p-5 shadow-warm border border-brand-creamDark flex flex-col justify-between min-w-[280px] sm:min-w-0 flex-shrink-0 snap-center hover:border-brand-gold transition-all duration-200">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-2.5">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-9 h-9 rounded-full bg-brand-green/10 text-brand-green font-bold text-xs flex items-center justify-center border border-brand-green/20 flex-shrink-0">
+                    ${r.avatar}
+                  </div>
+                  <div>
+                    <span class="block font-bold text-xs text-brand-charcoal leading-tight">${r.name}</span>
+                    <span class="text-[10px] text-gray-400 block">${r.date}</span>
+                  </div>
+                </div>
+                <span class="text-brand-gold tracking-wider font-bold text-xs">${starDisplay}</span>
+              </div>
+
+              <div class="flex items-center justify-start mb-2 pt-1 border-t border-brand-creamDark/60 text-xs">
+                <span class="text-[10px] bg-brand-cream px-2 py-0.5 rounded-md text-brand-green font-semibold border border-brand-creamDark truncate max-w-[200px]" title="${r.product} (${r.variant})">
+                  ${r.product} · ${r.variant}
+                </span>
+              </div>
+
+              <p class="text-xs text-brand-charcoal/85 leading-relaxed mt-1.5">
+                "${displayedText}"
+                ${isLongText ? `
+                  <button type="button" onclick="window.toggleReviewText('${r.id}')" class="ml-1 text-[11px] font-bold text-brand-green hover:underline focus:outline-none">
+                    ${isExpanded ? 'Show less' : 'Read more'}
+                  </button>
+                ` : ''}
+              </p>
+            </div>
+
+            ${(r.photos && r.photos.length > 0) ? `
+              <div class="pt-3 mt-3 border-t border-brand-creamDark/60">
+                <div class="flex items-center gap-2">
+                  ${r.photos.map(pUrl => `
+                    <button type="button" onclick="window.openReviewPhotoModal('${pUrl}', '${r.product} - ${r.variant}')" class="group relative w-14 h-14 rounded-xl overflow-hidden border border-brand-creamDark bg-brand-cream/60 flex items-center justify-center p-0.5 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-brand-green" aria-label="View larger preview of ${r.product} photo">
+                      <img src="${pUrl}" alt="Photo of ${r.product}" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-200">
+                    </button>
+                  `).join('')}
+                  <span class="text-[10px] text-gray-500 leading-tight">Click photo to expand</span>
+                </div>
+              </div>
+            ` : `
+              <div class="pt-2 mt-2"></div>
+            `}
+          </div>
+        `;
+      }).join('');
+    }
+
+    window.toggleReviewText = function(reviewId) {
+      if (expandedReviewIds.has(reviewId)) {
+        expandedReviewIds.delete(reviewId);
+      } else {
+        expandedReviewIds.add(reviewId);
+      }
+      renderReviews();
+    };
+
+    window.openReviewPhotoModal = function(imgUrl, caption) {
+      const modal = document.getElementById('review-photo-modal');
+      const img = document.getElementById('review-photo-modal-img');
+      const cap = document.getElementById('review-photo-modal-caption');
+      if (!modal || !img) return;
+
+      img.src = imgUrl;
+      if (cap) cap.innerText = caption || "Customer Photo";
+      modal.classList.remove('hidden');
+    };
+
+    window.closeReviewPhotoModal = function() {
+      const modal = document.getElementById('review-photo-modal');
+      if (modal) modal.classList.add('hidden');
+    };
+
+    function updateCartUI() {
+      const counter = document.getElementById('cart-counter-badge');
+      const totalItems = cart.reduce((acc, i) => acc + i.qty, 0);
+      if (counter) counter.innerText = totalItems;
+
+      const container = document.getElementById('cart-items-container');
+      if (!container) return;
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="py-12 text-center text-gray-400 space-y-2">
+            <span class="text-4xl block">🛒</span>
+            <p class="font-bold text-sm text-brand-charcoal">Your cart is empty.</p>
+            <p class="text-xs">Explore our snacks and bundles to get started!</p>
+          </div>
+        `;
+      } else {
+        const sellerGroups = {};
+        cart.forEach(item => {
+          if (!sellerGroups[item.seller]) sellerGroups[item.seller] = [];
+          sellerGroups[item.seller].push(item);
+        });
+
+        let cartMarkup = '';
+        for (const [seller, items] of Object.entries(sellerGroups)) {
+          const sellerSubtotal = items.reduce((acc, it) => {
+            return (typeof it.price === 'number') ? acc + (it.price * it.qty) : acc;
+          }, 0);
+
+          cartMarkup += `
+            <div class="p-3.5 rounded-2xl bg-white border border-brand-creamDark shadow-sm space-y-2.5">
+              <div class="flex items-center justify-between border-b border-brand-creamDark/60 pb-1.5">
+                <span class="text-xs font-bold text-brand-red">Sold by ${seller}</span>
+                <span class="text-xs font-bold text-brand-green">Subtotal: RM ${sellerSubtotal.toFixed(2)}</span>
+              </div>
+              <div class="space-y-2.5">
+                ${items.map(item => {
+                  const itemHasPrice = (typeof item.price === 'number' && !isNaN(item.price));
+                  const itemTotalDisplay = itemHasPrice 
+                    ? `RM ${(item.price * item.qty).toFixed(2)}` 
+                    : `<span class="text-amber-800 text-[11px] font-semibold">Price on request</span>`;
+
+                  return `
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-xl border border-brand-creamDark bg-brand-cream/60 flex items-center justify-center p-1 flex-shrink-0 overflow-hidden">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover rounded-lg" onerror="this.src='https://placehold.co/100x100/F7BF64/285839?text=Snack'">
+                      </div>
+                      <div class="flex-grow min-w-0">
+                        <div class="flex items-center justify-between">
+                          <span class="font-bold text-xs text-brand-charcoal truncate">${item.name}</span>
+                          <button onclick="window.removeCartItem('${item.itemKey}')" class="text-gray-400 hover:text-brand-red text-xs px-1" title="Remove">✕</button>
+                        </div>
+                        <span class="text-[10px] text-gray-500 block truncate">
+                          ${item.option}
+                        </span>
+                        <div class="flex items-center justify-between mt-1">
+                          <span class="text-xs font-bold font-mono">${itemTotalDisplay}</span>
+                          <div class="flex items-center border border-brand-creamDark rounded-lg overflow-hidden bg-brand-creamLight text-xs">
+                            <button onclick="window.updateCartItemQty('${item.itemKey}', -1)" class="px-2 py-0.5 hover:bg-brand-creamDark font-bold text-brand-green">-</button>
+                            <span class="px-2 font-bold">${item.qty}</span>
+                            <button onclick="window.updateCartItemQty('${item.itemKey}', 1)" class="px-2 py-0.5 hover:bg-brand-creamDark font-bold text-brand-green">+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+          `;
+        }
+        container.innerHTML = cartMarkup;
+      }
+
+      const itemsSubtotal = cart.reduce((acc, it) => {
+        return (typeof it.price === 'number') ? acc + (it.price * it.qty) : acc;
+      }, 0);
+
+      let deliveryFee = 0;
+      if (selectedFulfilment === 'outside-tvet') {
+        deliveryFee = outsideDeliveryKm * STORE_CONFIG.delivery.outsideTvetMaraBesut.ratePerKm;
+      }
+
+      const totalAmount = itemsSubtotal + deliveryFee;
+
+      const subtotalEl = document.getElementById('cart-subtotal-val');
+      const deliveryEl = document.getElementById('cart-delivery-val');
+      const totalEl = document.getElementById('cart-total-val');
+
+      if (subtotalEl) subtotalEl.innerText = `RM ${itemsSubtotal.toFixed(2)}`;
+      if (deliveryEl) {
+        if (selectedFulfilment === 'inside-tvet' || selectedFulfilment === 'pickup') {
+          deliveryEl.innerText = "FREE (RM 0.00)";
+        } else {
+          deliveryEl.innerText = `RM ${deliveryFee.toFixed(2)}`;
+        }
+      }
+      if (totalEl) totalEl.innerText = `RM ${totalAmount.toFixed(2)}`;
+    }
+
+    window.handleFulfilmentChange = function(val) {
+      selectedFulfilment = val;
+      const distBox = document.getElementById('outside-delivery-distance-box');
+      if (distBox) {
+        if (val === 'outside-tvet') {
+          distBox.classList.remove('hidden');
+        } else {
+          distBox.classList.add('hidden');
+        }
+      }
+      updateCartUI();
+    };
+
+    window.handleDistanceChange = function(val) {
+      const parsed = parseFloat(val);
+      outsideDeliveryKm = (!isNaN(parsed) && parsed > 0) ? parsed : 1.0;
+      updateCartUI();
+    };
+
+    window.handlePaymentMethodChange = function(val) {
+      selectedPaymentMethod = val;
+    };
+
+    window.updateCartItemQty = function(itemKey, delta) {
+      const item = cart.find(i => i.itemKey === itemKey);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) {
+        cart = cart.filter(i => i.itemKey !== itemKey);
+      }
+      saveCart();
+      updateCartUI();
+    };
+
+    window.removeCartItem = function(itemKey) {
+      cart = cart.filter(i => i.itemKey !== itemKey);
+      saveCart();
+      updateCartUI();
+      window.showToast("Item removed from cart", "🗑️");
+    };
+
+    window.proceedToWhatsAppCheckout = function() {
+      if (cart.length === 0) {
+        window.showToast("Your cart is empty! Please add snacks first.", "🛒");
+        return;
+      }
+
+      const sellerGroups = {};
+      cart.forEach(item => {
+        if (!sellerGroups[item.seller]) sellerGroups[item.seller] = [];
+        sellerGroups[item.seller].push(item);
+      });
+
+      let draft = `*--- DAPURUSTAK ORDER ---*\n`;
+      draft += `Hello DapurUstak! I would like to place an order from TVETMARA Besut.\n\n`;
+
+      for (const [seller, items] of Object.entries(sellerGroups)) {
+        draft += `*Seller: ${seller}*\n`;
+        let sellerSum = 0;
+        items.forEach(it => {
+          const itemCost = (typeof it.price === 'number') ? (it.price * it.qty) : null;
+          if (itemCost !== null) sellerSum += itemCost;
+          draft += `• ${it.name} (${it.option}) x${it.qty}`;
+          draft += itemCost !== null ? ` — RM ${itemCost.toFixed(2)}\n` : ` — (Price on request)\n`;
+        });
+        draft += `> Subtotal (${seller}): RM ${sellerSum.toFixed(2)}\n\n`;
+      }
+
+      draft += `*Fulfilment Details:*\n`;
+      if (selectedFulfilment === 'inside-tvet') {
+        draft += `• Method: Inside TVET MARA Besut Delivery (FREE)\n`;
+        draft += `• Delivery Fee: RM 0.00\n`;
+      } else if (selectedFulfilment === 'outside-tvet') {
+        const fee = (outsideDeliveryKm * STORE_CONFIG.delivery.outsideTvetMaraBesut.ratePerKm).toFixed(2);
+        draft += `• Method: Outside TVET MARA Besut Delivery\n`;
+        draft += `• Estimated Distance: ${outsideDeliveryKm} km (Fee: RM ${fee})\n`;
+      } else {
+        draft += `• Method: Self-Pickup at TVETMARA Besut Campus (FREE)\n`;
+        draft += `• Location: TVETMARA Besut, Jalan Alor Lintang\n`;
+      }
+
+      draft += `\n*Payment Method:* ${selectedPaymentMethod}\n`;
+      
+      const itemsTotal = cart.reduce((acc, it) => (typeof it.price === 'number' ? acc + (it.price * it.qty) : acc), 0);
+      const deliveryFee = (selectedFulfilment === 'outside-tvet') ? (outsideDeliveryKm * STORE_CONFIG.delivery.outsideTvetMaraBesut.ratePerKm) : 0;
+      const estimatedFinal = itemsTotal + deliveryFee;
+
+      draft += `*Estimated Total:* RM ${estimatedFinal.toFixed(2)}\n\n`;
+      draft += `Please confirm availability and pickup/dispatch timing. Thank you!`;
+
+      const encoded = encodeURIComponent(draft);
+      const url = `https://wa.me/60123456789?text=${encoded}`;
+      window.open(url, '_blank');
+    };
+
+    window.openProductDetailsModal = function(productId) {
+      const prod = STORE_CONFIG.products.find(p => p.id === productId);
+      if (!prod) return;
+
+      const modalImg = document.getElementById('modal-product-img');
+      const optSelect = document.getElementById(`option-${prod.id}`);
+      const selectedOption = optSelect ? optSelect.value : prod.options[0];
+
+      let imgSrc = prod.image;
+      if (prod.id === 'kerepek' && KEREPEK_IMAGES_MAP[selectedOption]) {
+        imgSrc = KEREPEK_IMAGES_MAP[selectedOption];
+      } else if (prod.id === 'seaweed' && SEAWEED_IMAGES_MAP[selectedOption]) {
+        imgSrc = SEAWEED_IMAGES_MAP[selectedOption];
+      }
+
+      modalImg.src = imgSrc;
+      modalImg.alt = prod.altText || prod.name;
+      
+      document.getElementById('modal-product-title').innerText = prod.name;
+      document.getElementById('modal-product-seller').innerText = `Sold by ${prod.seller}`;
+      document.getElementById('modal-product-subtitle').innerText = prod.subtitle;
+      document.getElementById('modal-product-price').innerText = `RM ${prod.price.toFixed(2)}`;
+      document.getElementById('modal-product-weight').innerText = `Serving: ${prod.weight}`;
+      document.getElementById('modal-product-badge').innerText = prod.stockStatus;
+
+      const packagingCaptionContainer = document.getElementById('modal-packaging-caption-container');
+      if (packagingCaptionContainer) {
+        packagingCaptionContainer.classList.add('hidden');
+      }
+
+      const sampleBadge = document.getElementById('modal-product-sample-badge');
+      if (sampleBadge) {
+        sampleBadge.classList.add('hidden');
+      }
+
+      document.getElementById('modal-product-ingredients').innerText = prod.details.ingredients || "To be confirmed";
+      document.getElementById('modal-product-allergens').innerText = prod.details.allergens || "To be confirmed";
+      document.getElementById('modal-product-storage').innerText = prod.details.storage || "To be confirmed";
+      document.getElementById('modal-product-shelf').innerText = prod.details.shelfLife || "To be confirmed";
+      document.getElementById('modal-product-packaging').innerText = prod.details.packaging || "To be confirmed";
+      document.getElementById('modal-product-variants').innerText = prod.details.variants || "To be confirmed";
+
+      document.getElementById('product-details-modal').classList.remove('hidden');
+    };
+
+    window.closeProductDetailsModal = function() {
+      document.getElementById('product-details-modal').classList.add('hidden');
+    };
+
+    window.openCartDrawer = function() {
+      const drawer = document.getElementById('cart-drawer');
+      const overlay = document.getElementById('cart-drawer-overlay');
+      if (drawer && overlay) {
+        drawer.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      }
+    };
+
+    window.closeCartDrawer = function() {
+      const drawer = document.getElementById('cart-drawer');
+      const overlay = document.getElementById('cart-drawer-overlay');
+      if (drawer && overlay) {
+        drawer.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      }
+    };
+
+    window.toggleMobileMenu = function() {
+      const menu = document.getElementById('mobile-menu');
+      if (menu) menu.classList.toggle('hidden');
+    };
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        window.closeProductDetailsModal();
+        window.closeReviewPhotoModal();
+        window.closeCartDrawer();
+      }
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const navLogo = document.getElementById('nav-brand-logo');
+      if (navLogo) {
+        navLogo.addEventListener('error', () => {
+          navLogo.src = DAPURUSTAK_ORIGINAL_LOGO;
+        });
+      }
+
+      const heroDadih = document.getElementById('hero-dadih-img');
+      if (heroDadih) heroDadih.src = DADIH_ADLI_IMAGE;
+
+      const heroSeaweed = document.getElementById('hero-seaweed-img');
+      if (heroSeaweed) {
+        heroSeaweed.src = "trioseaweed.jpeg";
+        heroSeaweed.onerror = function() {
+          this.onerror = null;
+          this.src = "trioseaweed.jpg";
+        };
+      }
+
+      loadSavedCart();
+      renderProducts();
+      renderBundles();
+      renderServices();
+      renderReviews();
+      updateCartUI();
+      checkOperatingStatus();
+      setInterval(checkOperatingStatus, 30000);
+    });
+  </script>
+</body>
+</html>
